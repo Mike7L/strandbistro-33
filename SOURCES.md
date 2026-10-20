@@ -4,7 +4,7 @@ Updated 21 October 2026.
 
 ## Menu and own photos
 
-Food and drink names, descriptions and prices were transcribed from the restaurant menu photographs supplied by the user in October 2026. Eight original photographed menu spreads are included in assets/speisekarte-*.webp; the wine duplicate was omitted. Pizza is labelled as a weekly special. All prices are in euros. Availability can change; allergen enquiries are directed to the restaurant team.
+Food and drink names, descriptions and prices (including spirits) were transcribed from the restaurant menu photographs supplied by the user in October 2026. Source photographs were used for transcription; the original-menu viewer was removed at the user’s request. Pizza is labelled as a weekly special. All prices are in euros. Availability can change; allergen enquiries are directed to the restaurant team.
 
 The dining room, terrace, window tables and bar are the user-supplied restaurant photographs with approved gentle image enhancement. The bar uses the cleaned v2 image requested by the user. The old May 2025 interior photograph is no longer displayed.
 
@@ -27,3 +27,7 @@ Guest photo still displayed: wine with sea view, nicole hesse, July 2026, Google
 
 Address and contact: https://www.amrum.de/33-strandbistro
 Google Maps opening hours checked 20 October 2026: Mon–Wed and Fri–Sun 12:00–20:00, Thursday closed. Seasonal changes possible; source/date shown on site.
+
+## Presentation update
+
+The menu now opens with all categories visible, including fish-roll and coffee prices. Beverage prices are separated by serving size. Decorative arrows and the original-menu viewer were removed.
