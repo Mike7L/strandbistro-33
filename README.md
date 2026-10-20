@@ -1,7 +1,7 @@
 # Strandbistro 33
 
-Static restaurant website for Norddorf auf Amrum.
+Restaurant website for Norddorf auf Amrum.
 
-Published at https://mike7l.github.io/strandbistro-33/ via GitHub Pages from the main branch.
+Live: https://mike7l.github.io/strandbistro-33/
 
-The website uses the restaurant logo and an illustrated fish roll. Restaurant photographs have not yet been added.
+GitHub Pages publishes the main branch. Includes guest photographs, two short translated review excerpts, dated rating and opening hours verified from Google Maps. See SOURCES.md for photo attributions and content sources.
