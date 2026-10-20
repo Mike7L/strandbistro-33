@@ -1,17 +1,29 @@
-# Google Maps sources
+# Content sources
 
-Checked on 20 October 2026. Listing: [33 Strandbistro, Strunwai 33](https://www.google.com/maps?cid=3531335784616033763).
+Updated 21 October 2026.
 
-The listing is distinct from Restaurant Strand 33 at Lunstruat 9.
+## Menu and own photos
 
-## Guest photographs
+Food and drink names, descriptions and prices were transcribed from the restaurant menu photographs supplied by the user in October 2026. Eight original photographed menu spreads are included in assets/speisekarte-*.webp; the wine duplicate was omitted. Pizza is labelled as a weekly special. All prices are in euros. Availability can change; allergen enquiries are directed to the restaurant team.
 
-- Erwin Ludwig: Im Strandbistro, Mai 2025. File: assets/bistro-interior.webp. [Source image](https://lh3.googleusercontent.com/grass-cs/AABkmLdECbgSO3LsSu7qQqLbt20_TpRzvoJI7C72ZXinWydEPDZTLKLyH2Wfk4V_NQS5-TS6mO0XIapjMIoK93h5Oezf_Vu8pgYtJ44NijQkj-I-2BvZpm3gR71WV8KdhOYnrcnA3ZNx7Fk3er4=w1800-h1350-k-no).
-- Kuan man Lam: Fish & Chips, Juli 2026. File: assets/fish-and-chips.webp. [Source image](https://lh3.googleusercontent.com/grass-cs/AABkmLdRssxb3eYrWXaZO3g0PZy6Vse-MlwI5aMWH2NO16RSEZkNBijFQCLg7T8r1D9akfQsPFU2KWhT5mA4zMbUeot8EQna3B4K9NKCTT_f0Dg108hgVFZ-LRct8OEHu-hj1fvO0qDjz8Lu-7g=w1400-h1800-k-no).
-- nicole hesse: Ein Glas mit Meerblick, Juli 2026. File: assets/wine-sea-view.webp. [Source image](https://lh3.googleusercontent.com/grass-cs/AABkmLfFTt03yuHUUgAZNvniXWQt_ztsD18POTRcJxU9L_SKexH2cJ2J7BGOZ8BM_MTopY8AmsJXuR3rZmzG60COaz0m3-cX7UAiKCESWFC4davaH03xkRRfXVfZ28Qn6JOz263sQobdc2Avkmp5=w1200-h1800-k-no).
+The dining room, terrace, window tables and bar are the user-supplied restaurant photographs with approved gentle image enhancement. The bar uses the cleaned v2 image requested by the user. The old May 2025 interior photograph is no longer displayed.
 
-## Listing and selected reviews
+## Reviews
 
-Google Maps displayed 4.2/5 from 200 reviews. Hours: 12:00–20:00 Monday–Wednesday and Friday–Sunday; Thursday closed. The website shows the retrieval date.
+Source: https://www.google.com/maps?cid=3531335784616033763 (German review view, read 21 October 2026).
 
-Short selected excerpts are translated from English and labeled as such. Authors: Ann-Kathrin Young (5 stars, shown as 3 months ago) and Verena Ha (5 stars, shown as 2 years ago). All relative ages were recorded on 20 October 2026. The page links to the complete Google Maps listing.
+Cutoff: 1 May 2026 inclusive. Reviews from before this date belong to the prior restaurant and are excluded. The historical aggregate Google score and review count are excluded as well.
+
+Selected five-star review excerpts:
+- Baschtl Kas — “Total lecker und gut belegt.” Google showed “vor 3 Monaten”.
+- Matti Johannsen — “leckeres, bodenständiges, normales Essen&Trinken.” Google showed “vor 3 Monaten”.
+- Elias Giemsa — “Die Familie hat sich wohlgefühlt” Google showed “vor 2 Monaten”.
+
+These relative dates place the reviews after the cutoff. Exact publication dates have not been inferred. Quotes are short original German excerpts; the site labels them as excerpts and dates its Google lookup.
+
+Guest photo still displayed: wine with sea view, nicole hesse, July 2026, Google Maps.
+
+## Practical information
+
+Address and contact: https://www.amrum.de/33-strandbistro
+Google Maps opening hours checked 20 October 2026: Mon–Wed and Fri–Sun 12:00–20:00, Thursday closed. Seasonal changes possible; source/date shown on site.
