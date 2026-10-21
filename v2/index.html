@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e2635">
+<title>Strandbistro 33 · Moin am Meer · Norddorf auf Amrum</title>
+<meta name="description" content="Strandbistro 33 am Strand von Norddorf auf Amrum: Fischbrötchen, Bistroküche, Kaffee &amp; Kuchen auf der Terrasse mit Meerblick. Strunwai 33.">
+<link rel="icon" href="../assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css?v=1">
+<script src="app.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+
+<header class="bar">
+  <a class="brand" href="#top" aria-label="Strandbistro 33 – nach oben">
+    <img src="../assets/logo.svg" alt="" width="56" height="45">
+    <span>Strandbistro&nbsp;33</span>
+  </a>
+  <p class="status" data-status aria-live="polite"><i></i><span>Öffnungszeiten</span></p>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen"><span></span><span></span></button>
+  <nav id="nav" aria-label="Hauptnavigation">
+    <a href="#karte">Speisekarte</a>
+    <a href="#ort">Der Ort</a>
+    <a href="#stimmen">Gäste</a>
+    <a href="#besuch">Anfahrt &amp; Zeiten</a>
+    <a class="call" href="tel:+491755695389">Anrufen</a>
+  </nav>
+</header>
+
+<main id="inhalt">
+<section class="hero" id="top">
+  <img class="hero-bg" src="../assets/terrace-enhanced-v1.webp" alt="Holzterrasse mit Tischen direkt an den Dünen von Norddorf" width="1448" height="1086" fetchpriority="high">
+  <div class="hero-inner">
+    <p class="kicker">Norddorf auf Amrum · Strunwai 33</p>
+    <h1><span>Moin</span><span>am Meer.</span></h1>
+    <p class="hero-sub">Fischbrötchen auf die Hand, Bistroküche am Tisch, Kaffee mit Dünenblick. Direkt am Strand von Norddorf.</p>
+    <div class="hero-actions">
+      <a class="btn btn-sun" href="#karte">Zur Speisekarte</a>
+      <a class="btn btn-ghost" href="#besuch">So findest du uns</a>
+    </div>
+  </div>
+  <ul class="hero-facts" aria-label="Auf einen Blick">
+    <li><b>Fischbrötchen</b><span>ab 6,50 €</span></li>
+    <li><b>Kaffee</b><span>ab 3,00 €</span></li>
+    <li><b>Terrasse</b><span>mit Meerblick</span></li>
+    <li><b>Donnerstag</b><span>Ruhetag</span></li>
+  </ul>
+</section>
+
+<section class="trio" aria-label="Was dich erwartet">
+  <article>
+    <span class="num">01</span>
+    <h2>Kiosk</h2>
+    <p>Matjes, Backfisch, Räucherlachs oder Krabben im Brötchen – ein Stück Nordsee für den Weg zum Strand.</p>
+  </article>
+  <article>
+    <span class="num">02</span>
+    <h2>Bistro</h2>
+    <p>Fisch’n’Chips, Flammkuchen, Pasta, Salate und Currywurst. Bodenständig, frisch und satt machend.</p>
+  </article>
+  <article>
+    <span class="num">03</span>
+    <h2>Café</h2>
+    <p>Cappuccino, Pharisäer und hausgemachter Kuchen. Am Fenster oder draußen im Wind.</p>
+  </article>
+</section>
+
+<section class="menu" id="karte" aria-labelledby="karte-title">
+  <div class="menu-head">
+    <div>
+      <p class="kicker">Die Karte</p>
+      <h2 id="karte-title">Was darf’s sein?</h2>
+    </div>
+    <div class="menu-tools">
+      <div class="tabs" role="tablist" aria-label="Speisekarte">
+        <button role="tab" id="tab-essen" aria-selected="true" aria-controls="panel-essen">Essen</button>
+        <button role="tab" id="tab-trinken" aria-selected="false" aria-controls="panel-trinken" tabindex="-1">Trinken</button>
+      </div>
+      <label class="search">
+        <span class="visually-hidden">Speisekarte durchsuchen</span>
+        <input type="search" placeholder="Suchen, z. B. Matjes" autocomplete="off" data-menu-search>
+      </label>
+    </div>
+  </div>
+
+  <p class="no-results" data-no-results hidden>Dazu haben wir leider nichts auf der Karte. Frag gern vor Ort nach.</p>
+
+  <div class="panel" id="panel-essen" role="tabpanel" aria-labelledby="tab-essen">
+    <div class="menu-grid">
+      <section class="card card-feature">
+        <h3>Fischbrötchen</h3>
+        <p class="note">Ein Stück Nordsee auf die Hand.</p>
+        <ul>
+          <li><span class="n">Matjes</span><span class="p">6,50 €</span></li>
+          <li><span class="n">Bismarckhering</span><span class="p">6,50 €</span></li>
+          <li><span class="n">Sherryhering</span><span class="p">8,00 €</span></li>
+          <li><span class="n">Backfisch</span><span class="p">8,00 €</span></li>
+          <li><span class="n">Räucherlachs</span><span class="p">8,50 €</span></li>
+          <li><span class="n">Krabben</span><span class="p">12,00 €</span></li>
+        </ul>
+      </section>
+
+      <figure class="card card-photo">
+        <img src="../assets/fish-and-chips.webp" alt="Fisch’n’Chips mit Remoulade und Zitrone" width="1350" height="1800" loading="lazy">
+        <figcaption>Fisch’n’Chips · 14,00 €</figcaption>
+      </figure>
+
+      <section class="card">
+        <h3>Fisch &amp; Küste</h3>
+        <ul>
+          <li><span class="n">Fisch’n’Chips<small>Zwei Kabeljaufilets im Tempurateig, Pommes, Remoulade und Zitrone</small></span><span class="p">14,00 €</span></li>
+          <li><span class="n">Matjes nach Hausfrauen Art<small>Zwei Matjesfilets, rote Zwiebeln, Pellkartoffeln und Schmand-Sherry-Soße mit Apfel und Cornichons</small></span><span class="p">14,50 €</span></li>
+          <li><span class="n">Matjes Sardinia<small>Zwei Matjesfilets, rote Zwiebeln, Pellkartoffeln, Cherrytomaten und Tomaten-Zwiebelcreme</small></span><span class="p">14,50 €</span></li>
+          <li><span class="n">Garnelen &amp; Knoblauch · klein<small>10 Garnelen im Knoblauchsud, Brot und hausgemachte Aioli</small></span><span class="p">9,50 €</span></li>
+          <li><span class="n">Garnelen &amp; Knoblauch · groß<small>20 Garnelen im Knoblauchsud, Brot und hausgemachte Aioli</small></span><span class="p">19,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Flammkuchen</h3>
+        <p class="note">Mit frischen Cherrytomaten und Rucola.</p>
+        <ul>
+          <li><span class="n">33 Spezial<small>Schmand, Speck, Zwiebeln und Pesto</small></span><span class="p">13,50 €</span></li>
+          <li><span class="n">Griechischer Art<small>Schmand, Hirtenkäse, Zwiebeln, Tomatenwürfel und milde Peperoni</small></span><span class="p">13,50 €</span></li>
+          <li><span class="n">Salami<small>Tomatensoße, Gouda und italienische Salami</small></span><span class="p">13,50 €</span></li>
+          <li><span class="n">Margarita<small>Tomatensoße und Gouda</small></span><span class="p">12,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Bistro-Klassiker</h3>
+        <ul>
+          <li><span class="n">Currywurst mit Brot<small>180 g</small></span><span class="p">8,50 €</span></li>
+          <li><span class="n">Currywurst mit Pommes<small>180 g</small></span><span class="p">12,50 €</span></li>
+          <li><span class="n">Chickencrossies<small>ca. 200 g</small></span><span class="p">8,50 €</span></li>
+          <li><span class="n">Chickencrossies mit Pommes</span><span class="p">12,50 €</span></li>
+          <li><span class="n">Ofenkartoffel<small>Sour Cream, Cornichons und Zwiebeln</small></span><span class="p">9,00 €</span></li>
+          <li><span class="n">Ofenkartoffel mit Räucherlachs<small>Mit Sour Cream, Cornichons und Zwiebeln</small></span><span class="p">15,00 €</span></li>
+          <li><span class="n">Crunchy Chicken Burger<small>130-g-Hähnchenpatty in Cornflakespanade, Brioche, Salat, Tomate und Zitronenmayonnaise</small></span><span class="p">9,00 €</span></li>
+          <li><span class="n">Crunchy Chicken Burger mit Pommes</span><span class="p">13,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Pasta</h3>
+        <p class="note">Alle Penne mit Parmesan.</p>
+        <ul>
+          <li><span class="n">Tomatensoße</span><span class="p">12,00 €</span></li>
+          <li><span class="n">Basilikum-Pesto</span><span class="p">14,00 €</span></li>
+          <li><span class="n">Bolognese</span><span class="p">15,00 €</span></li>
+          <li><span class="n">Echte Carbonara</span><span class="p">15,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card card-special">
+        <h3>Pizza <em>Wochenspezial</em></h3>
+        <p class="note">29 cm. Mit hausgemachter Tomatensoße und Mozzarella-Gouda-Mix. Bitte nach der aktuellen Verfügbarkeit fragen.</p>
+        <ul>
+          <li><span class="n">Margherita</span><span class="p">12,00 €</span></li>
+          <li><span class="n">Salame<small>Mit Spianata Romana</small></span><span class="p">14,00 €</span></li>
+          <li><span class="n">Prosciutto<small>Mit Prosciutto Cotto</small></span><span class="p">14,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Salate &amp; Suppe</h3>
+        <p class="note">Zu Salat, Pasta oder Flammkuchen: Hähnchen +6,00 € · Garnelen +7,00 €.</p>
+        <ul>
+          <li><span class="n">Gemischter Salat · klein<small>Blattsalat, Gurke, Tomate, Croûtons und Mango-Chili-Dressing</small></span><span class="p">6,00 €</span></li>
+          <li><span class="n">Gemischter Salat · groß</span><span class="p">10,00 €</span></li>
+          <li><span class="n">Cäsar’s Salat · klein<small>Blattsalat, Cherrytomaten, Croûtons, Cäsar-Dressing und Parmesan</small></span><span class="p">7,00 €</span></li>
+          <li><span class="n">Cäsar’s Salat · groß</span><span class="p">12,00 €</span></li>
+          <li><span class="n">Selbstgekochte Tomatensuppe<small>Mit konfierten Cherrytomaten, Basilikum und geröstetem Baguette</small></span><span class="p">8,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Für kleine Strandgäste</h3>
+        <ul>
+          <li><span class="n">Penne mit Tomatensoße</span><span class="p">7,00 €</span></li>
+          <li><span class="n">Penne mit Bolognese</span><span class="p">9,00 €</span></li>
+          <li><span class="n">Chickencrossies mit Pommes</span><span class="p">8,00 €</span></li>
+          <li><span class="n">Portion Pommes</span><span class="p">4,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Kuchen &amp; Dessert</h3>
+        <ul>
+          <li><span class="n">Tiramisu<small>Hausgemacht, alkoholfrei und im Glas serviert</small></span><span class="p">5,00 €</span></li>
+          <li><span class="n">33 Beach Cake<small>Hausgemachter Cheesecake im Glas mit Fruchtgrütze</small></span><span class="p">5,00 €</span></li>
+          <li><span class="n">Rahm-Käsekuchen</span><span class="p">4,00 €</span></li>
+          <li><span class="n">Schokoladenkuchen</span><span class="p">4,00 €</span></li>
+          <li><span class="n">Himbeer-Haselnusskuchen<small>Vegan</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Schlagsahne zum Kuchen</span><span class="p">0,50 €</span></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-trinken" role="tabpanel" aria-labelledby="tab-trinken" hidden>
+    <div class="menu-grid">
+      <section class="card card-feature">
+        <h3>Kaffee &amp; Heißes</h3>
+        <ul>
+          <li><span class="n">Café Crème</span><span class="p">3,00 €</span></li>
+          <li><span class="n">Espresso</span><span class="p">3,00 €</span></li>
+          <li><span class="n">Cappuccino</span><span class="p">3,50 €</span></li>
+          <li><span class="n">Latte Macchiato</span><span class="p">4,00 €</span></li>
+          <li><span class="n">Tee<small>Schwarzteemischung, Pfefferminze oder 8-Kräuter</small></span><span class="p">3,00 €</span></li>
+          <li><span class="n">Glas Kakao<small>Schlagsahne +0,50 €</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Pharisäer<small>Mit 4 cl Schuss</small></span><span class="p">8,50 €</span></li>
+          <li><span class="n">Tote Tante<small>Mit 4 cl Schuss</small></span><span class="p">8,50 €</span></li>
+          <li><span class="n">Rum Grog<small>Mit 4 cl Schuss</small></span><span class="p">6,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Alkoholfrei</h3>
+        <ul>
+          <li><span class="n">Flensburger Küstenlimo<small>0,33 l · Orange, Spezi, Kola oder Kola Zero</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Coasties Schorle<small>0,33 l · Apfel, Himbeer-Grapefruit oder Mango-Maracuja</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Magnus Wasser<small>0,25 l · mit oder ohne Kohlensäure</small></span><span class="p">3,50 €</span></li>
+          <li><span class="n">Magnus Wasser · Flasche<small>0,75 l · mit oder ohne Kohlensäure</small></span><span class="p">7,00 €</span></li>
+          <li><span class="n">Klindworth Apfelsaft<small>0,2 l</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Aqua Nordic Zitrone<small>0,3 l</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Thomas Henry Tonic<small>0,2 l</small></span><span class="p">4,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Bier vom Fass</h3>
+        <ul class="two">
+          <li class="sizes" aria-hidden="true"><span class="n"></span><span class="p">0,3 l</span><span class="p">0,5 l</span></li>
+          <li><span class="n">König Pilsener / Flensburger Pilsener</span><span class="p"><span class="visually-hidden">0,3 l </span>4,20 €</span><span class="p"><span class="visually-hidden">0,5 l </span>6,20 €</span></li>
+          <li><span class="n">Erdinger Helles</span><span class="p"><span class="visually-hidden">0,3 l </span>4,50 €</span><span class="p"><span class="visually-hidden">0,5 l </span>6,50 €</span></li>
+          <li><span class="n">Alsterwasser / Radler</span><span class="p"><span class="visually-hidden">0,3 l </span>4,00 €</span><span class="p"><span class="visually-hidden">0,5 l </span>6,00 €</span></li>
+        </ul>
+        <h4>Aus der Flasche</h4>
+        <ul>
+          <li><span class="n">Erdinger Weizen<small>0,5 l</small></span><span class="p">5,00 €</span></li>
+          <li><span class="n">Köstritzer Schwarzbier<small>0,33 l</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Bitburger 0,0 / Flensburger Frei / Radler Frei<small>Alkoholfrei · 0,33 l</small></span><span class="p">4,00 €</span></li>
+          <li><span class="n">Erdinger Alkoholfrei<small>0,5 l</small></span><span class="p">5,00 €</span></li>
+        </ul>
+      </section>
+
+      <figure class="card card-photo">
+        <img src="../assets/wine-sea-view.webp" alt="Weißweinglas auf einem Terrassentisch mit Blick auf Strand und Meer" width="1012" height="1800" loading="lazy">
+        <figcaption>Foto: nicole hesse · Juli 2026 · <a href="https://www.google.com/maps?cid=3531335784616033763" target="_blank" rel="noopener noreferrer">Google Maps</a></figcaption>
+      </figure>
+
+      <section class="card">
+        <h3>Wein</h3>
+        <p class="note">Weine enthalten Sulfite.</p>
+        <ul class="two">
+          <li class="sizes" aria-hidden="true"><span class="n"></span><span class="p">0,2 l</span><span class="p">0,75 l</span></li>
+          <li><span class="n">Grauburgunder<small>Kaiserstühler Winzer Ihringen · Baden · trocken</small></span><span class="p"><span class="visually-hidden">0,2 l </span>6,50 €</span><span class="p"><span class="visually-hidden">0,75 l </span>29,00 €</span></li>
+          <li><span class="n">Hausmarke Weißweincuvée<small>Metzger · Pfalz · feinherb</small></span><span class="p"><span class="visually-hidden">0,2 l </span>6,50 €</span><span class="p"><span class="visually-hidden">0,75 l </span>29,00 €</span></li>
+          <li><span class="n">Aimery Chardonnay Pays d’Oc IGP<small>Sieur d’Arques · Frankreich · trocken</small></span><span class="p"><span class="visually-hidden">0,2 l </span>6,50 €</span><span class="p"><span class="visually-hidden">0,75 l </span>29,00 €</span></li>
+          <li><span class="n">Hausmarke Rosécuvée<small>Metzger · Pfalz · mild</small></span><span class="p"><span class="visually-hidden">0,2 l </span>6,50 €</span><span class="p"><span class="visually-hidden">0,75 l </span>29,00 €</span></li>
+          <li><span class="n">Cal y Canto Tinto<small>Tierra de Castilla · Spanien</small></span><span class="p"><span class="visually-hidden">0,2 l </span>6,50 €</span><span class="p"><span class="visually-hidden">0,75 l </span>29,00 €</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Aperitif</h3>
+        <ul>
+          <li><span class="n">Piu Spritz<small>0,2 l · Orangen-Prosecco-Cocktail</small></span><span class="p">6,50 €</span></li>
+          <li><span class="n">Scavi &amp; Ray Hugo<small>0,2 l · Holunder-Minze-Aperitivo</small></span><span class="p">6,50 €</span></li>
+          <li><span class="n">Scavi &amp; Ray Prosecco<small>0,2 l</small></span><span class="p">6,50 €</span></li>
+        </ul>
+        <h4>Spirituosen</h4>
+        <ul>
+          <li><span class="n">Bombay Sapphire London Dry Gin</span><span class="p">5,00 €</span></li>
+          <li><span class="n">Finlandia Vodka</span><span class="p">5,00 €</span></li>
+          <li><span class="n">Botucal Diplomático</span><span class="p">5,50 €</span></li>
+          <li><span class="n">Helbing Kümmel</span><span class="p">2,50 €</span></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <p class="menu-foot">Alle Preise in Euro · Stand Oktober 2026. Wochenspezial nach Verfügbarkeit. Fragen zu Allergenen und Zusatzstoffen beantwortet dir unser Team vor Ort.</p>
+</section>
+
+<section class="place" id="ort" aria-labelledby="ort-title">
+  <div class="place-copy">
+    <p class="kicker">Der Ort</p>
+    <h2 id="ort-title">Holz, Wind und große Fenster.</h2>
+    <p>Drinnen warmes Licht und Tische direkt an der Scheibe, draußen die Holzterrasse zwischen Dünen und Strand. Und an der Theke wartet schon ein frisch gezapftes Bier.</p>
+    <p class="hint">Wischen für mehr Bilder →</p>
+  </div>
+  <div class="strip" tabindex="0" aria-label="Fotos aus dem Strandbistro">
+    <figure><img src="../assets/dining-room-enhanced-v1.webp" alt="Gastraum mit warmen Leuchten, Holztheke und Blick zu den Fenstern" width="1448" height="1086" loading="lazy"><figcaption>Der Gastraum</figcaption></figure>
+    <figure><img src="../assets/sea-view-tables-enhanced-v1.webp" alt="Tische direkt an den großen Fenstern mit Dünenblick" width="1448" height="1086" loading="lazy"><figcaption>Plätze am Fenster</figcaption></figure>
+    <figure><img src="../assets/bar-clean-v2.webp" alt="Biertheke mit Zapfhähnen und Gläsern, dahinter der Gastraum" width="1448" height="1086" loading="lazy"><figcaption>Die Theke</figcaption></figure>
+    <figure><img src="../assets/terrace-enhanced-v1.webp" alt="Holzterrasse mit Tischen an den Dünen" width="1448" height="1086" loading="lazy"><figcaption>Die Terrasse</figcaption></figure>
+  </div>
+  <p class="credit">Eigene Aufnahmen · Strandbistro 33</p>
+</section>
+
+<section class="voices" id="stimmen" aria-labelledby="stimmen-title">
+  <div class="voices-head">
+    <p class="kicker">Gäste sagen</p>
+    <h2 id="stimmen-title">Seit Mai 2026 neu am Strand.</h2>
+  </div>
+  <div class="quotes">
+    <figure>
+      <blockquote>„Total lecker und gut belegt.“</blockquote>
+      <figcaption><span class="stars" aria-label="5 von 5 Sternen">★★★★★</span> Baschtl Kas · Google Maps · vor 3 Monaten</figcaption>
+    </figure>
+    <figure>
+      <blockquote>„leckeres, bodenständiges, normales Essen&amp;Trinken.“</blockquote>
+      <figcaption><span class="stars" aria-label="5 von 5 Sternen">★★★★★</span> Matti Johannsen · Google Maps · vor 3 Monaten</figcaption>
+    </figure>
+    <figure>
+      <blockquote>„Die Familie hat sich wohlgefühlt“</blockquote>
+      <figcaption><span class="stars" aria-label="5 von 5 Sternen">★★★★★</span> Elias Giemsa · Google Maps · vor 2 Monaten</figcaption>
+    </figure>
+  </div>
+  <p class="fine">Auszüge aus ausgewählten Rezensionen seit dem 1. Mai 2026. Zeitangaben wie bei Google Maps beim Abruf am 21.10.2026. <a href="https://www.google.com/maps?cid=3531335784616033763" target="_blank" rel="noopener noreferrer">Alle Rezensionen auf Google Maps</a></p>
+</section>
+
+<section class="visit" id="besuch" aria-labelledby="besuch-title">
+  <div class="visit-main">
+    <p class="kicker">Anfahrt &amp; Zeiten</p>
+    <h2 id="besuch-title">Am Ende vom Strunwai.</h2>
+    <address>
+      Strandbistro 33<br>
+      Strunwai 33<br>
+      25946 Norddorf auf Amrum
+    </address>
+    <div class="visit-actions">
+      <a class="btn btn-sun" href="https://www.google.com/maps/search/?api=1&amp;query=Strandbistro+33+Strunwai+33+Norddorf+Amrum&amp;query_place_id=ChIJByA_BRnltEcR4_2psC_TATE" target="_blank" rel="noopener noreferrer">Route planen</a>
+      <a class="btn btn-ghost" href="tel:+491755695389">0175 569 538 9</a>
+    </div>
+    <p class="mail">Post ans Bistro: <a href="mailto:martenmeinerts@gmx.de">martenmeinerts@gmx.de</a></p>
+  </div>
+  <div class="hours-card">
+    <h3>Öffnungszeiten</h3>
+    <table class="week" data-week>
+      <tbody>
+        <tr data-day="1"><th scope="row">Montag</th><td>12:00–20:00</td></tr>
+        <tr data-day="2"><th scope="row">Dienstag</th><td>12:00–20:00</td></tr>
+        <tr data-day="3"><th scope="row">Mittwoch</th><td>12:00–20:00</td></tr>
+        <tr data-day="4" class="closed"><th scope="row">Donnerstag</th><td>Ruhetag</td></tr>
+        <tr data-day="5"><th scope="row">Freitag</th><td>12:00–20:00</td></tr>
+        <tr data-day="6"><th scope="row">Samstag</th><td>12:00–20:00</td></tr>
+        <tr data-day="0"><th scope="row">Sonntag</th><td>12:00–20:00</td></tr>
+      </tbody>
+    </table>
+    <p class="fine">Laut Google Maps · Stand 20.10.2026. Saisonale Änderungen möglich – <a href="https://www.google.com/maps?cid=3531335784616033763" target="_blank" rel="noopener noreferrer">aktuelle Zeiten prüfen</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="foot-word">Bis gleich<br>am Meer.</p>
+  <div class="foot-meta">
+    <span>© <span data-year>2026</span> Strandbistro 33 · Norddorf auf Amrum</span>
+    <a href="https://www.amrum.de/33-strandbistro" target="_blank" rel="noopener noreferrer">Infos bei Amrum Touristik</a>
+    <a href="#top">Nach oben ↑</a>
+  </div>
+</footer>
+</body>
+</html>
