@@ -87,7 +87,10 @@ tabs.forEach((tab, i) => {
 const fold = text => text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const items = [...document.querySelectorAll('.menu .card li:not(.sizes)')].map(li => {
   const name = li.querySelector('.n').firstChild;
-  return {li, name, original: name.textContent, haystack: fold(li.textContent)};
+  // Section titles count too, so "Kaffee" or "Pasta" finds the whole section
+  const subheading = li.parentElement.previousElementSibling;
+  const section = subheading && subheading.tagName === 'H4' ? subheading : li.closest('.card').querySelector('h3');
+  return {li, name, original: name.textContent, haystack: fold(li.textContent + ' ' + section.textContent)};
 });
 function highlight(item, query) {
   const node = item.name;
