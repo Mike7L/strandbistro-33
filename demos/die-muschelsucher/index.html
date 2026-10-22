@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Die Muschelsucher · Café &amp; Restaurant · Norddorf auf Amrum</title>
+<meta name="description" content="Café &amp; Restaurant Die Muschelsucher in der Fußgängerzone von Norddorf auf Amrum: Fisch, Steaks vom Lavasteingrill, Pasta, vegetarische Gerichte, Waffeln, Kuchen und Softeis. Terrasse, kinderfreundlich.">
+<meta name="theme-color" content="#14204a">
+<style>
+:root{--night:#14204a;--night-2:#1f2f66;--neon:#4f7dff;--shell:#f3c9b0;--coral:#e0785a;--cream:#fbf6ee;--sand:#efe3d0;--ink:#1d2236;--muted:#636a80;--line:#e6dccb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:var(--cream)}
+h1,h2,h3{margin:0;line-height:1.12;font-family:"Brush Script MT","Segoe Script","Snell Roundhand",cursive;font-weight:400}
+h2,h3{font-family:Georgia,"Times New Roman",serif}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(20,32,74,.96);color:#fff}
+.bar{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:14px}
+.logo{display:flex;gap:10px;align-items:center;text-decoration:none}
+.logo svg{width:36px;height:36px}
+.logo b{font-family:"Brush Script MT","Segoe Script",cursive;font-weight:400;font-size:28px;line-height:1}
+.logo small{display:block;font-size:11px;letter-spacing:.2em;opacity:.75}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;opacity:.9}
+.cta{border:2px solid var(--neon);box-shadow:0 0 14px rgba(79,125,255,.55);padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:600;white-space:nowrap}
+.toggle{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:8px;padding:6px 10px;font-size:18px}
+.hero{background:var(--night);color:#fff}
+.hero-in{max-width:1120px;margin:auto;padding:56px 20px;display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
+.kick{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--shell);font-weight:600;margin:0 0 14px}
+.hero h1{font-size:clamp(56px,9vw,104px);text-shadow:0 0 18px rgba(79,125,255,.75),0 0 2px #fff}
+.hero p{font-size:20px;opacity:.9;margin:16px 0 28px;max-width:500px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600;background:var(--coral);color:#fff}
+.btn.neon{background:transparent;border:2px solid var(--neon);box-shadow:0 0 14px rgba(79,125,255,.5);margin-left:8px}
+.hero figure{margin:0;position:relative}
+.hero figure img{border-radius:22px;aspect-ratio:4/3;object-fit:cover;width:100%;box-shadow:0 0 0 1px rgba(79,125,255,.4),0 24px 60px rgba(0,0,0,.45)}
+.hero figcaption{font-size:12px;opacity:.6;margin-top:8px}
+.open-now{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border-radius:999px;padding:6px 14px;font-size:14px;margin-bottom:18px}
+.open-now i{width:9px;height:9px;border-radius:50%;background:#5ad18b;box-shadow:0 0 8px #5ad18b}
+.tags{background:var(--night-2);color:#fff}
+.tags ul{max-width:1120px;margin:auto;padding:16px 20px;list-style:none;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;font-size:15px}
+.tags li::before{content:"✦ ";color:var(--shell)}
+section{padding:84px 20px}
+.wrap{max-width:1120px;margin:auto}
+h2{font-size:clamp(32px,4.4vw,46px);color:var(--night);margin-bottom:12px}
+h2 em{color:var(--coral)}
+.sub{font-size:19px;color:var(--muted);max-width:680px}
+.day{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.slot{border-radius:24px;padding:30px;position:relative;overflow:hidden}
+.slot.sun{background:var(--sand)}
+.slot.moon{background:var(--night);color:#fff}
+.slot .time{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}
+.slot.moon .time{color:var(--shell)}
+.slot h3{font-size:30px;margin:8px 0 10px}
+.slot ul{padding-left:20px;margin:10px 0 0}
+.slot .big{position:absolute;right:-10px;top:-10px;font-size:110px;opacity:.12}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.menu-grid div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.menu-grid b{display:block;font-family:Georgia,serif;font-weight:400;font-size:23px;color:var(--night);margin-bottom:6px}
+.menu-grid span{color:var(--muted);font-size:15px}
+.menu-cta{margin-top:24px;background:#fff;border:2px dashed var(--shell);border-radius:18px;padding:18px 20px;color:var(--muted);font-size:15px}
+.family{background:var(--shell)}
+.family .two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.family ul{list-style:none;padding:0;display:grid;gap:12px;margin:22px 0 0}
+.family li{background:rgba(255,255,255,.7);border-radius:14px;padding:14px 16px}
+.family li b{color:var(--night)}
+.shells{display:grid;place-items:center}
+.shells svg{width:min(360px,80%)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hours{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin:20px 0}
+.hours div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0}
+.hours div:last-child{border:0}
+.hours small{color:var(--muted)}
+.clist{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.clist b{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}
+.map{border:0;width:100%;height:100%;min-height:360px;border-radius:20px}
+footer{background:var(--night);color:#c4cbe4;padding:32px 20px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+@media (max-width:900px){
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--night);flex-direction:column;padding:16px 20px;gap:14px}
+ nav.open{display:flex}
+ .toggle{display:block}
+ .bar .cta{display:none}
+ .hero-in,.day,.family .two,.visit{grid-template-columns:1fr}
+ .menu-grid{grid-template-columns:1fr 1fr}
+ section{padding:60px 20px}
+ .shells{display:none}
+}
+@media (max-width:540px){.menu-grid{grid-template-columns:1fr}.btn.neon{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Website-Vorschlag für Die Muschelsucher · Inhalte aus öffentlichen Angaben (amrum.de, Google Maps), Stand Oktober 2026</div>
+<header>
+ <div class="bar">
+  <a class="logo" href="#top" aria-label="Die Muschelsucher, zum Seitenanfang">
+   <svg viewBox="0 0 40 40" fill="none" stroke="#f3c9b0" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 34 5 16c4-8 26-8 30 0L20 34Z"/><path d="M20 34 12 12m8 22V10m0 24 8-22M20 34 7.5 14M20 34l12.5-20"/><path d="M15 34h10"/></svg>
+   <span><b>Die Muschelsucher</b><small>CAFÉ &amp; RESTAURANT · AMRUM</small></span>
+  </a>
+  <button class="toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  <nav id="nav"><a href="#tag">Tag &amp; Abend</a><a href="#karte">Karte</a><a href="#familie">Familien</a><a href="#besuch">Besuch</a></nav>
+  <a class="cta" href="tel:+4946824488">Tisch reservieren</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="hero-in">
+  <div>
+   <span class="open-now"><i></i>Küche ab 12:00 Uhr</span>
+   <p class="kick">Café &amp; Restaurant · Fußgängerzone Norddorf</p>
+   <h1>Die Muschelsucher</h1>
+   <p>Mittags Waffeln und Kuchen, abends Fisch und Steaks vom Lavasteingrill. Von unserer Terrasse aus sehen Sie das ganze Treiben in Norddorfs Fußgängerzone.</p>
+   <a class="btn" href="tel:+4946824488">04682 4488 anrufen</a><a class="btn neon" href="#karte">Was es bei uns gibt</a>
+  </div>
+  <figure>
+   <img src="assets/haus-abends.webp" alt="Das Café &amp; Restaurant Die Muschelsucher am Abend mit blau leuchtender Dachkante" width="1600" height="1200">
+   <figcaption>Foto: Google Maps · bei Umsetzung durch eigene Aufnahmen ersetzen</figcaption>
+  </figure>
+ </div>
+</section>
+<div class="tags"><ul><li>Terrasse mit Blick auf die Fußgängerzone</li><li>Kinderfreundlich</li><li>Vegetarisch</li><li>Familienfeiern möglich</li><li>4,3 ★ bei Google</li></ul></div>
+
+<section id="tag">
+ <div class="wrap">
+  <p class="kick" style="color:var(--coral)">Vom Mittag bis in den Abend</p>
+  <h2>Zwei Gesichter, <em>ein Lieblingsort</em></h2>
+  <p class="sub">Tagsüber ein gemütliches Inselcafé, abends ein Restaurant mit Lavasteingrill.</p>
+  <div class="day">
+   <div class="slot sun"><span class="big" aria-hidden="true">☀</span><span class="time">12:00 – 17:30 Uhr</span><h3>Tagsüber</h3><p>Kleine Gerichte für die Mittagspause zwischen Strand und Dünen:</p><ul><li>Hausgemachte Waffeln</li><li>Selbstgebackener Kuchen</li><li>Softeis</li><li>Fischbrötchen</li></ul></div>
+   <div class="slot moon"><span class="big" aria-hidden="true">☾</span><span class="time">Abends bis 22:00 Uhr</span><h3>Am Abend</h3><p>Unsere Küche zeigt, was sie kann:</p><ul><li>Fischgerichte</li><li>Steaks vom Lavasteingrill</li><li>Pasta und vegetarische Gerichte</li><li><b>Überraschungsmenü</b> mit 2, 3 oder 4 Gängen, ganz nach Ihrem Wunsch</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section id="karte" style="background:#fff">
+ <div class="wrap">
+  <p class="kick" style="color:var(--coral)">Unsere Küche</p>
+  <h2>Was bei uns <em>auf den Tisch</em> kommt</h2>
+  <div class="menu-grid">
+   <div><b>Aus der Nordsee</b><span>Fischgerichte, frisch zubereitet</span></div>
+   <div><b>Lavasteingrill</b><span>Saftige Steaks, direkt vom heißen Stein</span></div>
+   <div><b>Pasta</b><span>Für den großen Hunger nach dem Strandtag</span></div>
+   <div><b>Vegetarisch</b><span>Fleischlos und trotzdem richtig satt</span></div>
+   <div><b>Café &amp; Kuchen</b><span>Hausgemachte Waffeln und Kuchen</span></div>
+   <div><b>Für Kinder</b><span>Softeis, Waffeln und kleine Portionen</span></div>
+  </div>
+  <p class="menu-cta"><b>Platz für Ihre Speisekarte:</b> Hier kommt Ihre aktuelle Karte mit Preisen hin, als übersichtliche Liste, die Sie jederzeit selbst ändern können. Gäste lesen sie vor dem Besuch am Handy.</p>
+ </div>
+</section>
+
+<section id="familie" class="family">
+ <div class="wrap two">
+  <div>
+   <p class="kick" style="color:var(--night)">Für Familien und Feiern</p>
+   <h2>Kinder willkommen. <em>Feste auch.</em></h2>
+   <ul>
+    <li><b>Kinderfreundlich:</b> Waffeln, Softeis und Platz für die ganze Familie.</li>
+    <li><b>Terrasse:</b> Draußen sitzen und dem Treiben in der Fußgängerzone zuschauen.</li>
+    <li><b>Familienfeiern:</b> Geburtstag, Jubiläum oder Wiedersehen im Urlaub? Sprechen Sie uns an.</li>
+   </ul>
+   <p style="margin-top:22px"><a class="btn" href="mailto:die.muschelsucher@web.de?subject=Anfrage%20Familienfeier">Feier anfragen</a></p>
+  </div>
+  <div class="shells" aria-hidden="true">
+   <svg viewBox="0 0 200 200" fill="none" stroke="#14204a" stroke-width="3" stroke-linejoin="round"><path d="M100 170 30 80c20-40 120-40 140 0l-70 90Z" fill="#fbf6ee"/><path d="M100 170 62 60m38 110V50m0 120 38-110M100 170 42 70m58 100 58-100"/><path d="M80 170h40"/><circle cx="160" cy="150" r="14" fill="#e0785a" stroke="none"/><circle cx="40" cy="150" r="8" fill="#4f7dff" stroke="none"/></svg>
+  </div>
+ </div>
+</section>
+
+<section id="besuch">
+ <div class="wrap visit">
+  <div>
+   <p class="kick" style="color:var(--coral)">Besuchen Sie uns</p>
+   <h2>Mitten in <em>Norddorf</em></h2>
+   <div class="hours">
+    <div><span>Küche</span><b>12:00 – 22:00 Uhr</b></div>
+    <div><span>Kleine Gerichte</span><b>12:00 – 17:30 Uhr</b></div>
+    <small>Laut amrum.de und Google Maps, Stand Oktober 2026. Ruhetage und Saisonzeiten bitte bei Umsetzung ergänzen.</small>
+   </div>
+   <ul class="clist">
+    <li><b>Adresse</b>Die Muschelsucher · Strunwai 9 · 25946 Norddorf auf Amrum</li>
+    <li><b>Telefon</b><a href="tel:+4946824488">04682 4488</a></li>
+    <li><b>E-Mail</b><a href="mailto:die.muschelsucher@web.de">die.muschelsucher@web.de</a></li>
+   </ul>
+  </div>
+  <iframe class="map" title="Karte: Die Muschelsucher, Strunwai 9, Norddorf" loading="lazy" src="https://maps.google.com/maps?q=Die%20Muschelsucher%2C%20Strunwai%209%2C%2025946%20Norddorf&z=16&output=embed"></iframe>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+ <span>© 2026 Die Muschelsucher · Café &amp; Restaurant · Norddorf auf Amrum</span>
+ <span>Impressum · Datenschutz <em>(werden bei Umsetzung ergänzt)</em></span>
+</div></footer>
+<script>
+const t=document.querySelector('.toggle'),n=document.getElementById('nav');
+t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded',false)}));
+</script>
+</body>
+</html>
