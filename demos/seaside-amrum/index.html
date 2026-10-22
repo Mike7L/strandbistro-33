@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Seaside Amrum · Ferienwohnungen in Norddorf</title>
+<meta name="description" content="Seaside Amrum – so schön viel Meer. 2020 sanierte Ferienwohnungen im Ortskern von Norddorf auf Amrum, für 2 bis 6 Gäste. Direkt beim Gastgeber anfragen.">
+<meta name="theme-color" content="#1e3557">
+<style>
+:root{--navy:#1e3557;--navy-2:#2c4a73;--ochre:#c98a3c;--ochre-l:#f4e3c8;--sky:#eaf2f8;--paper:#fffdf8;--ink:#1c2633;--muted:#5d6a7a;--line:#e3dccd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 "Avenir Next","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{line-height:1.12;margin:0;font-weight:700;letter-spacing:-.01em}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,253,248,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{max-width:1160px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+.logo svg{width:40px;height:40px}
+.logo b{font-size:20px;letter-spacing:.06em}
+.logo small{display:block;font-size:12px;color:var(--muted);letter-spacing:.04em;font-weight:500}
+nav{display:flex;gap:24px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--navy)}
+.cta{background:var(--navy);color:#fff;border-radius:12px;padding:10px 18px;text-decoration:none;font-weight:600}
+.toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:18px;color:var(--navy)}
+.hero{max-width:1160px;margin:auto;padding:48px 20px 24px;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.kicker{color:var(--ochre);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;margin:0 0 14px}
+.hero h1{font-size:clamp(42px,6.5vw,72px);color:var(--navy)}
+.hero h1 span{color:var(--ochre)}
+.hero p{font-size:20px;color:var(--muted);margin:20px 0 28px;max-width:520px}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:600;background:var(--ochre);color:#fff}
+.btn.alt{background:transparent;color:var(--navy);border:2px solid var(--navy);margin-left:8px}
+.hero-img{position:relative}
+.hero-img img{border-radius:28px 28px 28px 120px;aspect-ratio:4/3.4;object-fit:cover;width:100%}
+.badge{position:absolute;left:-18px;bottom:28px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 14px 34px rgba(30,53,87,.18);font-size:14px}
+.badge b{font-size:26px;color:var(--navy);display:block}
+.strip{max-width:1160px;margin:16px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.strip div{background:var(--sky);border-radius:16px;padding:16px 18px;font-size:15px;color:var(--navy-2)}
+.strip b{display:block;font-size:22px;color:var(--navy)}
+section{padding:84px 20px}
+.wrap{max-width:1160px;margin:auto}
+h2{font-size:clamp(32px,4.4vw,46px);color:var(--navy);margin-bottom:14px}
+.sub{font-size:19px;color:var(--muted);max-width:660px}
+.units{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.unit{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.unit img{aspect-ratio:3/2;object-fit:cover}
+.unit .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.unit h3{font-size:22px;color:var(--navy)}
+.specs{display:flex;flex-wrap:wrap;gap:8px}
+.specs span{background:var(--ochre-l);color:#7a4d14;border-radius:999px;padding:4px 11px;font-size:13px;font-weight:600}
+.unit p{margin:0;color:var(--muted);font-size:15px}
+.unit a{margin-top:auto;font-weight:600;color:var(--ochre);text-decoration:none}
+.unit.small{grid-column:span 1}
+.feat{background:var(--navy);color:#fff}
+.feat h2{color:#fff}
+.feat .sub{color:#c8d4e4}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.feat-grid div{border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:22px}
+.feat-grid b{display:block;font-size:19px;margin-bottom:6px;color:var(--ochre-l)}
+.lage{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mosaic img{border-radius:18px;aspect-ratio:1/1;object-fit:cover;width:100%}
+.dist{list-style:none;padding:0;margin:24px 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dist li{background:var(--sky);border-radius:12px;padding:12px 14px;font-size:15px}
+.dist b{display:block;color:var(--navy);font-size:18px}
+.cond{background:var(--ochre-l)}
+.cond-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.cond-grid div{background:#fff;border-radius:16px;padding:18px;font-size:15px}
+.cond-grid b{display:block;color:var(--navy);margin-bottom:4px}
+.ask{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:start}
+form{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:14px;color:var(--muted);display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.full{grid-column:1/-1}
+button.send{grid-column:1/-1;font:inherit;font-weight:700;border:0;border-radius:12px;padding:14px;background:var(--navy);color:#fff;cursor:pointer}
+.ok{display:none;grid-column:1/-1;background:var(--sky);border-radius:12px;padding:12px 14px;color:var(--navy);font-size:15px}
+.host{display:flex;gap:16px;align-items:center;margin-top:26px;background:var(--sky);border-radius:18px;padding:18px}
+.host .av{width:58px;height:58px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700;font-size:20px;flex:none}
+footer{background:var(--navy);color:#c8d4e4;padding:34px 20px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+@media (max-width:920px){
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;padding:16px 20px;gap:14px;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}
+ .toggle{display:block}
+ .bar .cta{display:none}
+ .hero,.lage,.ask{grid-template-columns:1fr}
+ .badge{left:12px}
+ .strip{grid-template-columns:1fr 1fr}
+ .units,.feat-grid,.cond-grid{grid-template-columns:1fr 1fr}
+ section{padding:60px 20px}
+}
+@media (max-width:560px){.units,.feat-grid,.cond-grid,form{grid-template-columns:1fr}.btn.alt{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Website-Vorschlag für Seaside Amrum · Inhalte und Fotos aus den öffentlichen Inseraten des Gastgebers, Stand Oktober 2026</div>
+<header>
+ <div class="bar">
+  <a class="logo" href="#top" aria-label="Seaside Amrum, zum Seitenanfang">
+   <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3l5.6 13.3 14.4 1.2-11 9.4 3.4 14.1L24 33.4 11.6 41l3.4-14.1-11-9.4 14.4-1.2z" fill="#c98a3c" stroke="#1e3557" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="23" r="4" fill="#2c4a73"/></svg>
+   <span><b>SEASIDE AMRUM</b><small>So schön viel Meer</small></span>
+  </a>
+  <button class="toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  <nav id="nav"><a href="#wohnungen">Wohnungen</a><a href="#ausstattung">Ausstattung</a><a href="#lage">Lage</a><a href="#konditionen">Konditionen</a><a href="#anfrage">Anfrage</a></nav>
+  <a class="cta" href="#anfrage">Direkt anfragen</a>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <div>
+  <p class="kicker">Ferienwohnungen · Norddorf auf Amrum</p>
+  <h1>So schön <span>viel Meer.</span></h1>
+  <p>Helle, 2020 aufwendig sanierte Ferienwohnungen mitten im Ortskern von Norddorf. Supermarkt, Restaurants und Kino sind ein paar Schritte entfernt. Zum Kniepsand fährt in der Saison der Strandshuttle.</p>
+  <a class="btn" href="#wohnungen">Wohnungen ansehen</a><a class="btn alt" href="tel:+4946829688940">04682 9688940</a>
+ </div>
+ <div class="hero-img">
+  <img src="assets/haus.webp" alt="Klinkerhaus von Seaside Amrum mit Garten und Liegestühlen" width="1200" height="900">
+  <div class="badge"><b>4,9 ★</b>Gästebewertung bei Google</div>
+ </div>
+</div>
+<div class="strip">
+ <div><b>2–6</b>Gäste pro Wohnung</div>
+ <div><b>2020</b>komplett saniert</div>
+ <div><b>200 m</b>bis zur Ortsmitte</div>
+ <div><b>0 €</b>Kaution</div>
+</div>
+
+<section id="wohnungen">
+ <div class="wrap">
+  <p class="kicker">Unsere Wohnungen</p>
+  <h2>Für Paare, Familien und Freunde</h2>
+  <p class="sub">Alle Wohnungen sind hell und modern eingerichtet, mit Einbauküche, W-LAN und Waschmaschine.</p>
+  <div class="units">
+   <article class="unit"><img src="assets/wohnung-4.webp" alt="Heller Wohn- und Essbereich mit offener Küche" loading="lazy"><div class="body"><h3>Wohnung 4</h3><div class="specs"><span>64 m²</span><span>3 Schlafzimmer</span><span>bis 6 Gäste</span></div><p>Erdgeschoss mit Terrasse. Drei Schlafzimmer mit Boxspringbetten (180 × 200), separates WC und Bad. Ideal für Familien.</p><a href="#anfrage" data-unit="Wohnung 4">Wohnung 4 anfragen →</a></div></article>
+   <article class="unit"><img src="assets/wohnung-789.webp" alt="Wohnküche mit Sofa und Essplatz" loading="lazy"><div class="body"><h3>Wohnung 7/8/9</h3><div class="specs"><span>68 m²</span><span>2 Schlafzimmer</span><span>2 Bäder</span><span>bis 4 Gäste</span></div><p>Großzügig mit zwei Bädern, Wohnbereich mit Einbauküche und Zugang zur großen Außenanlage. Hunde auf Anfrage.</p><a href="#anfrage" data-unit="Wohnung 7/8/9">Wohnung 7/8/9 anfragen →</a></div></article>
+   <article class="unit"><img src="assets/wohnung-5.webp" alt="Wohnzimmer mit Sofa und Terrassentür" loading="lazy"><div class="body"><h3>Wohnung 5</h3><div class="specs"><span>58 m²</span><span>1 Schlafzimmer</span><span>2 Bäder</span><span>bis 4 Gäste</span></div><p>Mit Terrasse und großem Bad mit Eckbadewanne. Ruhig gelegen, nah an der Amrumer Odde.</p><a href="#anfrage" data-unit="Wohnung 5">Wohnung 5 anfragen →</a></div></article>
+   <article class="unit"><img src="assets/haus-2.webp" alt="Haus von Seaside Amrum mit Rasen und Laternen" loading="lazy"><div class="body"><h3>Wohnung 13</h3><div class="specs"><span>36 m²</span><span>1 Schlafzimmer</span><span>bis 4 Gäste</span></div><p>Kompakt und gemütlich für einen Inselurlaub zu zweit oder mit Kindern.</p><a href="#anfrage" data-unit="Wohnung 13">Wohnung 13 anfragen →</a></div></article>
+   <article class="unit"><img src="assets/garten.webp" alt="Garten mit Strandkorb" loading="lazy"><div class="body"><h3>Wohnung 10</h3><div class="specs"><span>22 m²</span><span>bis 2 Gäste</span></div><p>Das kleine Inselnest für zwei: alles da, was man für Strandtage braucht.</p><a href="#anfrage" data-unit="Wohnung 10">Wohnung 10 anfragen →</a></div></article>
+   <article class="unit"><img src="assets/dorfplatz.webp" alt="Dorfplatz in Norddorf" loading="lazy"><div class="body"><h3>Weitere Wohnungen</h3><div class="specs"><span>auf Anfrage</span></div><p>Seaside Amrum hat noch mehr Wohnungen im Haus. Fragen Sie uns nach Ihrer Reisezeit, wir finden die passende.</p><a href="#anfrage" data-unit="egal">Freie Wohnung finden →</a></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="ausstattung" class="feat">
+ <div class="wrap">
+  <p class="kicker">Ausstattung</p>
+  <h2>Ankommen und wohlfühlen</h2>
+  <p class="sub">Was alle Gäste bei Seaside Amrum erwartet.</p>
+  <div class="feat-grid">
+   <div><b>Modern saniert</b>2020 komplett erneuert, hell und freundlich eingerichtet.</div>
+   <div><b>Gut schlafen</b>Boxspringbetten in den Schlafzimmern.</div>
+   <div><b>Eigene Küche</b>Einbauküche in jeder Wohnung, Waschmaschine im Haus.</div>
+   <div><b>Garten &amp; Spielplatz</b>Große Außenanlage mit Spielplatz und Strandkorb.</div>
+   <div><b>Gratis W-LAN</b>Schnell online, auch wenn man eigentlich offline sein will.</div>
+   <div><b>Nichtraucher</b>Alle Wohnungen sind Nichtraucherwohnungen.</div>
+  </div>
+ </div>
+</section>
+
+<section id="lage">
+ <div class="wrap lage">
+  <div>
+   <p class="kicker">Die Lage</p>
+   <h2>Mitten in Norddorf</h2>
+   <p class="sub">Ladenpassage, Dorfplatz mit Kino und Abenteuerland liegen um die Ecke. Zum Strand fährt in der Hauptsaison der Strandshuttle.</p>
+   <ul class="dist">
+    <li><b>200 m</b>Ortsmitte &amp; Restaurants</li>
+    <li><b>300 m</b>Supermarkt &amp; Bus</li>
+    <li><b>ca. 1–2 km</b>Strand am Kniepsand</li>
+    <li><b>5 km</b>Fähre in Wittdün</li>
+   </ul>
+  </div>
+  <div class="mosaic">
+   <img src="assets/strand.webp" alt="Weiter Sandstrand am Kniepsand" loading="lazy">
+   <img src="assets/dorfplatz.webp" alt="Dorfplatz in Norddorf mit Kino" loading="lazy">
+   <img src="assets/schlafen.webp" alt="Schlafzimmer mit Boxspringbett" loading="lazy">
+   <img src="assets/terrasse.webp" alt="Terrasse mit Sonnenschirm" loading="lazy">
+  </div>
+ </div>
+</section>
+
+<section id="konditionen" class="cond">
+ <div class="wrap">
+  <p class="kicker">Gut zu wissen</p>
+  <h2>Faire Konditionen</h2>
+  <div class="cond-grid">
+   <div><b>Anzahlung</b>30 % bei Buchung, Rest 4 Wochen vor Anreise</div>
+   <div><b>Keine Kaution</b>Wir vertrauen unseren Gästen</div>
+   <div><b>An- und Abreise</b>Anreise ab 16:00 Uhr, Abreise bis 10:00 Uhr</div>
+   <div><b>Stornierung</b>Ab 4 Wochen vorher 30 %, innerhalb von 2 Wochen 50 %</div>
+   <div><b>Kurabgabe</b>Wird separat berechnet</div>
+   <div><b>Haustiere</b>Hunde nur in einzelnen Wohnungen, bitte anfragen</div>
+  </div>
+ </div>
+</section>
+
+<section id="anfrage">
+ <div class="wrap ask">
+  <div>
+   <p class="kicker">Direkt beim Gastgeber</p>
+   <h2>Ihre Anfrage</h2>
+   <p class="sub">Ohne Portal, ohne Umweg. Sie schreiben uns, wir antworten persönlich mit Verfügbarkeit und Preis.</p>
+   <div class="host"><div class="av">SK</div><div><b>Sören Krüger</b><br>Seaside Amrum GmbH · Nei Stich 3, 25946 Norddorf<br><a href="tel:+4946829688940">04682 9688940</a></div></div>
+  </div>
+  <form id="form">
+   <label>Wohnung<select name="unit" id="unit"><option value="egal">Egal, was frei ist</option><option>Wohnung 4</option><option>Wohnung 7/8/9</option><option>Wohnung 5</option><option>Wohnung 13</option><option>Wohnung 10</option></select></label>
+   <label>Gäste<select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+   <label>Anreise<input type="date" name="an" required></label>
+   <label>Abreise<input type="date" name="ab" required></label>
+   <label>Name<input name="name" required autocomplete="name"></label>
+   <label>E-Mail<input type="email" name="mail" required autocomplete="email"></label>
+   <label class="full">Nachricht<textarea name="msg" rows="3" placeholder="z. B. mit Kind, Hund, Wunsch-Etage"></textarea></label>
+   <button class="send" type="submit">Unverbindlich anfragen</button>
+   <p class="ok" id="ok">Danke! In der fertigen Website geht Ihre Anfrage hier direkt an Seaside Amrum. Im Entwurf wird nichts versendet.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+ <span>© 2026 Seaside Amrum GmbH · Nei Stich 3 · 25946 Norddorf auf Amrum</span>
+ <span>Impressum · Datenschutz <em>(werden bei Umsetzung ergänzt)</em></span>
+</div></footer>
+
+<script>
+const t=document.querySelector('.toggle'),n=document.getElementById('nav');
+t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded',false)}));
+document.querySelectorAll('[data-unit]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('unit').value=a.dataset.unit}));
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').style.display='block'});
+</script>
+</body>
+</html>

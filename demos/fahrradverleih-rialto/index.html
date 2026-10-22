@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Fahrradverleih Rialto · Norddorf auf Amrum</title>
+<meta name="description" content="Fahrradverleih Rialto in Norddorf auf Amrum: Cityräder, E-Bikes, Kinderräder, Anhänger und Zubehör. Kostenloser Pannenservice inselweit. Preise ansehen und Räder reservieren.">
+<meta name="theme-color" content="#24543f">
+<style>
+:root{--green:#24543f;--green-2:#2f6b4f;--leaf:#dcebdc;--sun:#f5c84b;--sun-l:#fff4d1;--cream:#fbfaf4;--ink:#1f2a24;--muted:#5d6b63;--line:#e1e5d9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:var(--cream)}
+h1,h2,h3{margin:0;line-height:1.1;font-weight:800;letter-spacing:-.015em}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+header{position:sticky;top:0;z-index:10;background:var(--green);color:#fff}
+.bar{max-width:1140px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:44px;height:30px}
+.logo b{font-size:20px;letter-spacing:.08em}
+.logo small{display:block;font-size:11px;letter-spacing:.18em;opacity:.8;font-weight:600}
+nav{display:flex;gap:22px;font-weight:600;font-size:15px}
+nav a{text-decoration:none;opacity:.92}
+.cta{background:var(--sun);color:var(--green);padding:9px 16px;border-radius:999px;font-weight:800;text-decoration:none;white-space:nowrap}
+.toggle{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:8px;padding:6px 10px;font-size:18px}
+.hero{background:var(--green);color:#fff;overflow:hidden}
+.hero-in{max-width:1140px;margin:auto;padding:40px 20px 0;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.hero-copy{padding-bottom:56px}
+.pill{display:inline-block;background:var(--sun);color:var(--green);font-weight:800;border-radius:999px;padding:6px 14px;font-size:14px;margin-bottom:18px}
+.hero h1{font-size:clamp(40px,6.4vw,70px)}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero p{font-size:20px;opacity:.92;margin:18px 0 26px;max-width:520px}
+.btn{display:inline-block;background:var(--sun);color:var(--green);font-weight:800;padding:14px 24px;border-radius:999px;text-decoration:none}
+.btn.line{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);margin-left:8px}
+.hero img{border-radius:26px 26px 0 0;aspect-ratio:4/3.3;object-fit:cover;width:100%}
+.perks{max-width:1140px;margin:-1px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;transform:translateY(-28px)}
+.perks div{background:#fff;border-radius:18px;padding:18px;box-shadow:0 12px 30px rgba(36,84,63,.12);font-size:15px}
+.perks b{display:block;font-size:20px;color:var(--green)}
+section{padding:70px 20px}
+.wrap{max-width:1140px;margin:auto}
+.kick{color:var(--green-2);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin:0 0 10px}
+h2{font-size:clamp(32px,4.4vw,46px);color:var(--green);margin-bottom:12px}
+.sub{color:var(--muted);font-size:19px;max-width:680px}
+.fleet{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.fleet div{background:var(--leaf);border-radius:18px;padding:20px}
+.fleet .ico{font-size:30px}
+.fleet b{display:block;font-size:19px;color:var(--green);margin:6px 0 4px}
+.fleet span{font-size:15px;color:var(--muted)}
+.prices{background:#fff}
+.tablewrap{overflow-x:auto;margin-top:26px;border:1px solid var(--line);border-radius:18px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:15px}
+th,td{padding:12px 14px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+thead th{background:var(--green);color:#fff;font-weight:700}
+tbody tr:nth-child(even){background:var(--cream)}
+td.hl{font-weight:800;color:var(--green)}
+.note{font-size:14px;color:var(--muted);margin-top:12px}
+.calc{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:start}
+.calc form,.res{background:#fff;border-radius:22px;padding:24px;border:1px solid var(--line)}
+.rows{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:1fr 92px;gap:10px;align-items:center;font-size:15px}
+.row input{width:100%}
+label{font-size:14px;color:var(--muted);display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.check{display:flex;gap:8px;align-items:center;font-size:15px;color:var(--ink)}
+.res{background:var(--green);color:#fff;border:0;position:sticky;top:90px}
+.res .sum{font-size:46px;font-weight:800;color:var(--sun);margin:6px 0}
+.res ul{padding-left:18px;margin:10px 0;font-size:15px;opacity:.92}
+.res .btn{margin-top:10px;display:block;text-align:center}
+.res small{display:block;opacity:.75;margin-top:10px;font-size:13px}
+.service{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.service div{border:2px dashed var(--green-2);border-radius:18px;padding:20px;background:#fff}
+.service b{display:block;color:var(--green);font-size:20px;margin-bottom:6px}
+.family{background:var(--sun-l)}
+.family .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.family a{display:block;background:#fff;border-radius:18px;padding:20px;text-decoration:none;border:1px solid #f0e2b0}
+.family a b{display:block;font-size:19px;color:var(--green)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.clist{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px}
+.clist b{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-2)}
+.map{border:0;width:100%;height:340px;border-radius:20px}
+footer{background:var(--green);color:#d6e6dc;padding:30px 20px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+@media (max-width:920px){
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--green);flex-direction:column;padding:16px 20px;gap:14px}
+ nav.open{display:flex}
+ .toggle{display:block}
+ .bar .cta{display:none}
+ .hero-in,.calc,.contact{grid-template-columns:1fr}
+ .hero-copy{padding-bottom:0}
+ .perks{grid-template-columns:1fr 1fr;transform:none;margin-top:20px}
+ .fleet{grid-template-columns:1fr 1fr}
+ .service,.family .grid{grid-template-columns:1fr}
+ .res{position:static}
+ section{padding:56px 20px}
+}
+@media (max-width:520px){.fleet,.opts{grid-template-columns:1fr}.btn.line{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Website-Vorschlag für den Fahrradverleih Rialto · Preise aus der aktuellen Preisliste auf hausrialto.de, Stand Oktober 2026</div>
+<header>
+ <div class="bar">
+  <a class="logo" href="#top" aria-label="Fahrradverleih Rialto, zum Seitenanfang">
+   <svg viewBox="0 0 64 40" fill="none" stroke="#f5c84b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="27" r="10"/><circle cx="51" cy="27" r="10"/><path d="M13 27l10-16h18l10 16M23 11l9 16h-19M41 11l-9 16M20 6h7"/></svg>
+   <span><b>RIALTO</b><small>FAHRRADVERLEIH · NORDDORF</small></span>
+  </a>
+  <button class="toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  <nav id="nav"><a href="#raeder">Räder</a><a href="#preise">Preise</a><a href="#reservieren">Reservieren</a><a href="#service">Service</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="cta" href="tel:+494682961313">04682 96 13 13</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="hero-in">
+  <div class="hero-copy">
+   <span class="pill">20 % Rabatt für Hausgäste</span>
+   <h1>Amrum entdeckt man <em>am besten mit dem Rad.</em></h1>
+   <p>Ihr Fahrradverleih mitten in Norddorf: vom 3-Gang-Rad über das E-Bike bis zum Kinderanhänger. Mit kostenlosem Pannenservice auf der ganzen Insel.</p>
+   <a class="btn" href="#reservieren">Räder reservieren</a><a class="btn line" href="#preise">Preise ansehen</a>
+  </div>
+  <img src="assets/rad-weide.webp" alt="Fahrrad mit Korb auf einer Wiese, im Hintergrund ein weißes Pferd" width="1600" height="1200">
+ </div>
+</section>
+<div class="perks">
+ <div><b>Ab 6,50 €</b>pro Tag fürs Cityrad</div>
+ <div><b>E-Bikes</b>mit Mittelmotor</div>
+ <div><b>Gratis</b>Pannenservice inselweit</div>
+ <div><b>−10 %</b>für Gruppen ab 5 Personen</div>
+</div>
+
+<section id="raeder">
+ <div class="wrap">
+  <p class="kick">Unsere Räder</p>
+  <h2>Für die ganze Familie</h2>
+  <p class="sub">Für Kinder gibt es Räder, Laufräder, Nachläufer, Anhänger und Sitze. Helme und Körbe bekommen Sie zu unseren Rädern dazu.</p>
+  <div class="fleet">
+   <div><span class="ico">🚲</span><b>Cityräder</b><span>3-Gang und 7-Gang, Damen und Herren, auch Aluräder</span></div>
+   <div><span class="ico">⚡</span><b>E-Bikes</b><span>7-Gang mit Mittelmotor, für Gegenwind auf der Insel</span></div>
+   <div><span class="ico">🧒</span><b>Kinder</b><span>Kinderräder, Laufräder, Nachläufer, Kindersitze, Babyschalen</span></div>
+   <div><span class="ico">🛒</span><b>Transport</b><span>Kinderanhänger, Kinderbuggy, Fahrradkörbe</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="preise" class="prices">
+ <div class="wrap">
+  <p class="kick">Preisliste</p>
+  <h2>Klare Preise, keine Überraschungen</h2>
+  <p class="sub">Alle Preise in Euro. Je länger Sie mieten, desto günstiger wird jeder Tag.</p>
+  <div class="tablewrap"><table>
+   <thead><tr><th>Rad / Zubehör</th><th>1 Tag</th><th>Folgetag</th><th>1 Woche</th><th>2 Wochen</th><th>3 Wochen</th><th>4 Wochen</th></tr></thead>
+   <tbody id="ptable"></tbody>
+  </table></div>
+  <p class="note">E-Bike: jeder weitere Tag nach 1 Woche 11,00 €, nach 2 oder 3 Wochen 10,00 €. Hausgäste im Haus Rialto erhalten 20 % Rabatt, Gruppen ab 5 Personen 10 %.</p>
+ </div>
+</section>
+
+<section id="reservieren">
+ <div class="wrap">
+  <p class="kick">Preisrechner &amp; Reservierung</p>
+  <h2>Was kostet mein Radurlaub?</h2>
+  <p class="sub">Räder auswählen, Dauer wählen, fertig. Die Reservierung schicken Sie mit einem Klick per E-Mail.</p>
+  <div class="calc" style="margin-top:28px">
+   <form id="calc">
+    <div class="rows" id="rows"></div>
+    <div class="opts">
+     <label>Mietdauer<select id="dur">
+      <option value="1">1 Tag</option><option value="2">2 Tage</option><option value="3">3 Tage</option><option value="4">4 Tage</option><option value="5">5 Tage</option><option value="6">6 Tage</option>
+      <option value="w1" selected>1 Woche</option><option value="w2">2 Wochen</option><option value="w3">3 Wochen</option><option value="w4">4 Wochen</option></select></label>
+     <label>Abholung ab<input type="date" id="date"></label>
+     <label class="check"><input type="checkbox" id="guest"> Ich wohne im Haus Rialto</label>
+     <label>Name<input id="name" autocomplete="name"></label>
+    </div>
+   </form>
+   <div class="res" aria-live="polite">
+    <div>Ihr Richtpreis</div>
+    <div class="sum" id="sum">0,00 €</div>
+    <ul id="lines"><li>Noch keine Räder ausgewählt</li></ul>
+    <a class="btn" id="send" href="#">Per E-Mail reservieren</a>
+    <small>Richtpreis laut Preisliste. Rabatte werden nicht addiert, es gilt der höhere. Die Reservierung wird vom Verleih bestätigt.</small>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="service" style="background:var(--leaf)">
+ <div class="wrap">
+  <p class="kick">Service</p>
+  <h2>Wir lassen Sie nicht stehen</h2>
+  <div class="service">
+   <div><b>Pannenservice</b>Kostenlos und inselweit für alle unsere Räder. Ein Anruf genügt.</div>
+   <div><b>Gruppenrabatt</b>10 % für Gruppen ab 5 Personen.</div>
+   <div><b>Hausgäste</b>20 % Rabatt für Gäste in unseren Ferienwohnungen im Haus Rialto.</div>
+  </div>
+ </div>
+</section>
+
+<section class="family">
+ <div class="wrap">
+  <p class="kick">Familie Khan</p>
+  <h2>Alles aus einer Hand</h2>
+  <p class="sub">Der Fahrradverleih gehört zur Familie Khan, die in Norddorf auch Ferienwohnungen und das Restaurant Rialto betreibt.</p>
+  <div class="grid">
+   <a href="https://www.hausrialto.de/" target="_blank" rel="noopener"><b>Haus Rialto</b>Ferienwohnungen in Norddorf und im Merry Hüs in Nebel →</a>
+   <a href="https://rialto-amrum.de/" target="_blank" rel="noopener"><b>Restaurant Rialto</b>Italienisch und indisch, seit 1988 in Norddorf →</a>
+   <a href="#kontakt"><b>Eiscafé Giovanni L.</b>Gleich nebenan in der Taft 5 →</a>
+  </div>
+ </div>
+</section>
+
+<section id="kontakt">
+ <div class="wrap contact">
+  <div>
+   <p class="kick">Kontakt</p>
+   <h2>So erreichen Sie uns</h2>
+   <ul class="clist">
+    <li><b>Adresse</b>Fahrradverleih Rialto · Familie Khan<br>Taft 5, 25946 Norddorf auf Amrum</li>
+    <li><b>Sofort-Info</b><a href="tel:+494682961313">04682 96 13 13</a></li>
+    <li><b>Weitere Nummern</b><a href="tel:+4915129503547">0151 29503547</a> · <a href="tel:+494682961249">04682 961249</a></li>
+    <li><b>E-Mail</b><a href="mailto:info@hausrialto.de">info@hausrialto.de</a></li>
+    <li><b>Öffnungszeiten</b>08:30–12:30 und 13:30–18:30 Uhr<br><small style="color:var(--muted)">laut Google Maps, Stand Oktober 2026</small></li>
+   </ul>
+  </div>
+  <iframe class="map" title="Karte: Fahrradverleih Rialto, Taft 5, Norddorf" loading="lazy" src="https://maps.google.com/maps?q=Fahrradverleih%20Rialto%2C%20Taft%205%2C%2025946%20Norddorf&z=16&output=embed"></iframe>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+ <span>© 2026 Fahrradverleih Rialto · Familie Khan · Norddorf auf Amrum</span>
+ <span>Impressum · Datenschutz <em>(werden bei Umsetzung ergänzt)</em></span>
+</div></footer>
+
+<script>
+// Preise laut Preisliste hausrialto.de: [1 Tag, Folgetag, 1 Wo, 2 Wo, 3 Wo, 4 Wo]
+const P=[
+ ['3-Gang Damen-/Herrenrad',[6.5,5.5,35,59,83,98]],
+ ['7-Gang Damen-/Herrenrad',[7.5,7,40,70,99,130]],
+ ['7-Gang E-Bike Mittelmotor',[20,18,105,182,252,322]],
+ ['Kinderrad / Nachläufer',[4,3.5,25,39,55,69]],
+ ['Kinderbuggy',[4,4,25,41,58,76]],
+ ['Kinderanhänger',[7.5,7,40,70,99,130]],
+ ['Laufrad',[2.4,2.1,16,24,32,39]],
+ ['Kindersitz',[1,.8,3,5,7,9]],
+ ['Korb',[.5,.4,1,2,2.5,3]]];
+const eur=v=>v.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' €';
+document.getElementById('ptable').innerHTML=P.map(([n,p])=>`<tr><td>${n}</td>${p.map((v,i)=>`<td${i==0?' class="hl"':''}>${eur(v)}</td>`).join('')}</tr>`).join('');
+document.getElementById('rows').innerHTML=P.map(([n],i)=>`<label class="row"><span>${n}</span><input type="number" min="0" max="20" value="${i==1?2:0}" data-i="${i}" aria-label="Anzahl ${n}"></label>`).join('');
+const price=(p,d)=>{if(d[0]==='w')return p[1+ +d[1]];const n=+d;return p[0]+(n-1)*p[1]};
+function calc(){
+ const d=document.getElementById('dur').value,label=document.getElementById('dur').selectedOptions[0].text;
+ let sum=0,cnt=0,lines=[];
+ document.querySelectorAll('#rows input').forEach(inp=>{const q=+inp.value||0;if(!q)return;const [n,p]=P[inp.dataset.i];const v=price(p,d)*q;sum+=v;if(inp.dataset.i<3||inp.dataset.i==3||inp.dataset.i==6)cnt+=q;lines.push(`${q} × ${n}: ${eur(v)}`)});
+ const guest=document.getElementById('guest').checked,disc=guest?.2:(cnt>=5?.1:0);
+ if(disc){lines.push(`${guest?'Hausgäste':'Gruppe ab 5'} −${disc*100} %: −${eur(sum*disc)}`);sum*=1-disc}
+ document.getElementById('sum').textContent=eur(sum);
+ document.getElementById('lines').innerHTML=(lines.length?lines:['Noch keine Räder ausgewählt']).map(l=>`<li>${l}</li>`).join('');
+ const body=`Moin Familie Khan,\n\nich möchte gerne reservieren:\n${lines.join('\n')}\nMietdauer: ${label}\nAbholung ab: ${document.getElementById('date').value||'-'}\nRichtpreis: ${eur(sum)}\n\nViele Grüße\n${document.getElementById('name').value}`;
+ document.getElementById('send').href='mailto:info@hausrialto.de?subject='+encodeURIComponent('Fahrrad-Reservierung')+'&body='+encodeURIComponent(body);
+}
+document.getElementById('calc').addEventListener('input',calc);calc();
+const t=document.querySelector('.toggle'),n=document.getElementById('nav');
+t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded',false)}));
+</script>
+</body>
+</html>
