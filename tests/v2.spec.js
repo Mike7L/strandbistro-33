@@ -153,9 +153,15 @@ test('the original site still loads', async ({ page }) => {
   await expect(page.locator('h1')).toContainText('Ein Platz');
 });
 
-test('the catalog links to every site', async ({ page, request }) => {
-  await page.goto('/');
-  const links = await page.locator('main a').evaluateAll(as => as.map(a => a.href));
-  expect(links.length).toBeGreaterThanOrEqual(9);
-  for (const link of links) expect((await request.get(link)).status(), link).toBe(200);
-});
+for (const [path, minLinks] of [['/', 5], ['/neptun/', 6]]) {
+  test(`the catalog at ${path} links to existing pages and images`, async ({ page, request }) => {
+    await page.goto(path);
+    const links = await page.locator('main a').evaluateAll(as => as.map(a => a.href));
+    expect(links.length).toBeGreaterThanOrEqual(minLinks);
+    for (const link of links) expect((await request.get(link)).status(), link).toBe(200);
+    for (const img of await page.locator('img').all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect.poll(() => img.evaluate(el => el.complete && el.naturalWidth)).toBeGreaterThan(0);
+    }
+  });
+}
