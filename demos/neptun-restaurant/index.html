@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Restaurant Neptun · Fisch &amp; Salatbuffet · Norddorf auf Amrum</title>
+<meta name="description" content="Restaurant Neptun in Norddorf auf Amrum: Fisch in reicher Auswahl, Fleischgerichte, vegetarische Gerichte und ein großes Salatbuffet. Strunwai 7, Fußgängerzone.">
+<meta name="theme-color" content="#0f2b2a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#0f2b2a;--deep-2:#163a38;--brass:#c9a35c;--brass-l:#ead7ad;--paper:#f7f3ea;--ink:#1c2626;--muted:#5d6966;--line:#e2d9c6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16.5px/1.7 "Inter","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+header{position:sticky;top:0;z-index:20;background:var(--deep);color:#fff}
+.bar{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;gap:14px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px}
+.logo svg{width:30px;height:30px}
+.logo b{font-family:"DM Serif Display",serif;font-weight:400;font-size:26px}
+.logo span{display:block;font-size:10px;letter-spacing:.32em;color:var(--brass-l);text-transform:uppercase}
+nav{display:flex;gap:26px;font-size:14px}
+nav a{text-decoration:none;color:#c9d6d4}
+.res{background:var(--brass);color:var(--deep);text-decoration:none;font-weight:600;padding:10px 18px;border-radius:999px;font-size:14px;white-space:nowrap}
+.hero{position:relative;min-height:82vh;display:grid;align-items:end;color:#fff;background:var(--deep) url(assets/restaurant.webp) center/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,43,42,.25),rgba(15,43,42,.92) 85%)}
+.hero-in{position:relative;max-width:1180px;width:100%;margin:auto;padding:0 22px 64px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.over{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);font-weight:600;margin:0 0 16px}
+.hero h1{font-size:clamp(52px,8vw,108px)}
+.hero h1 em{color:var(--brass-l)}
+.hero p{font-size:19px;color:#d6e0de;margin:0 0 26px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;background:var(--brass);color:var(--deep)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);margin-left:8px}
+.info{border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:22px;background:rgba(15,43,42,.55);backdrop-filter:blur(6px)}
+.info div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:15px}
+.info div:last-child{border:0}
+.info b{color:var(--brass-l);font-weight:600}
+section{padding:110px 22px}
+.wrap{max-width:1180px;margin:auto}
+h2{font-size:clamp(40px,5.2vw,66px);color:var(--deep)}
+h2 em{color:var(--brass)}
+.lead{font-size:19px;color:var(--muted)}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.quote{font-family:"DM Serif Display",serif;font-size:clamp(26px,2.6vw,34px);line-height:1.3;color:var(--deep);border-left:3px solid var(--brass);padding-left:24px;margin:0}
+.quote small{display:block;font-family:"Inter",sans-serif;font-size:13px;color:var(--muted);margin-top:12px}
+.menu{background:var(--deep);color:#fff}
+.menu h2{color:#fff}
+.courses{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:50px;border-top:1px solid rgba(255,255,255,.14)}
+.course{padding:34px 30px 34px 0;border-bottom:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:64px 1fr;gap:20px}
+.course:nth-child(odd){border-right:1px solid rgba(255,255,255,.14)}
+.course:nth-child(even){padding-left:30px}
+.course .n{font-family:"DM Serif Display",serif;font-size:40px;color:var(--brass);line-height:1}
+.course h3{font-size:30px;margin-bottom:6px}
+.course p{margin:0;color:#b7c7c4}
+.menu-slot{margin-top:40px;border:1px dashed var(--brass);border-radius:16px;padding:22px 24px;color:var(--brass-l)}
+.menu-slot b{color:#fff}
+.buffet{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.buffet .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px}
+.buffet .tag{display:inline-block;background:var(--brass-l);color:var(--deep);border-radius:999px;padding:4px 12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:14px}
+.buffet img{border-radius:22px;aspect-ratio:4/3.2;object-fit:cover;width:100%}
+.hp{background:var(--brass-l)}
+.hp .row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:40px}
+.hp .row a,.hp .row div{background:var(--paper);border-radius:20px;padding:28px;text-decoration:none;display:block}
+.hp b{display:block;font-family:"DM Serif Display",serif;font-weight:400;font-size:28px;color:var(--deep);margin-bottom:6px}
+.hp span{color:var(--muted)}
+.hp .go{display:block;margin-top:12px;color:var(--deep);font-weight:600}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.vbox{background:var(--deep);color:#fff;border-radius:22px;padding:36px;display:grid;gap:20px;align-content:start}
+.vbox small{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass)}
+.vbox a{color:#fff}
+.map{border:0;width:100%;height:100%;min-height:380px;border-radius:22px}
+footer{background:#0a1e1d;color:#a7b7b4;padding:32px 22px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:920px){
+ nav{display:none}
+ .hero-in,.intro,.buffet,.visit{grid-template-columns:1fr;gap:30px}
+ .courses{grid-template-columns:1fr}
+ .course,.course:nth-child(even){padding:28px 0;border-right:0!important}
+ .hp .row{grid-template-columns:1fr}
+ section{padding:72px 22px}
+}
+@media (max-width:480px){.btn.ghost{margin:10px 0 0}.bar .res{padding:9px 12px}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Website-Vorschlag für das Restaurant Neptun · Inhalte und Fotos von der bisherigen Seite des Hauses, Stand Oktober 2026</div>
+<header><div class="bar">
+ <a class="logo" href="#top"><svg viewBox="0 0 40 40" fill="none" stroke="#c9a35c" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6v28M12 12l8-6 8 6M12 12v6m16-6v6M12 18c0 4 3.5 7 8 7s8-3 8-7"/></svg><span><b>Neptun</b><span>Restaurant · Amrum</span></span></a>
+ <nav><a href="#kueche">Küche</a><a href="#salatbuffet">Salatbuffet</a><a href="#haus">Im Haus</a><a href="#besuch">Besuch</a></nav>
+ <a class="res" href="tel:+4946821234">Tisch reservieren</a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0"><div class="hero-in">
+ <div>
+  <p class="over">Restaurant in Norddorf auf Amrum</p>
+  <h1>Alles, was<br>das <em>Meer</em> hergibt.</h1>
+  <p>Fisch in reicher Auswahl, Fleischgerichte und ein großes Salatbuffet. Mitten in der Fußgängerzone von Norddorf.</p>
+  <a class="btn" href="tel:+4946821234">04682 1234 anrufen</a><a class="btn ghost" href="#kueche">Unsere Küche</a>
+ </div>
+ <div class="info">
+  <div><span>Adresse</span><b>Strunwai 7, Norddorf</b></div>
+  <div><span>Reservierung</span><b>04682 1234</b></div>
+  <div><span>Bewertung</span><b>4,4 ★ bei Google</b></div>
+  <div><span>Danach</span><b>Bar Onerbäänke im Haus</b></div>
+ </div>
+</div></section>
+
+<section><div class="wrap intro">
+ <div><p class="over">Unser Restaurant</p><h2>Maritim<br>von der Decke<br><em>bis auf den Teller.</em></h2></div>
+ <div>
+  <p class="quote">„Der Name und die maritime Dekoration verraten es schon: hier gibt es alles, was das Meer hergibt, in reicher Auswahl.“<small>Aus der Hausbeschreibung des Neptun</small></p>
+  <p class="lead" style="margin-top:26px">Schiffsmodelle unter dem Glasdach, Bilder von der See an den Wänden: Im Gastraum des Neptun sitzt man wie in einer Kapitänsmesse. Auch Gäste von außerhalb des Hotels sind herzlich willkommen.</p>
+ </div>
+</div></section>
+
+<section id="kueche" class="menu"><div class="wrap">
+ <p class="over">Die Küche</p>
+ <h2>Für jeden <em>Geschmack.</em></h2>
+ <div class="courses">
+  <div class="course"><span class="n">01</span><div><h3>Aus dem Meer</h3><p>Fisch in reicher Auswahl, das, wofür das Neptun bekannt ist.</p></div></div>
+  <div class="course"><span class="n">02</span><div><h3>Vom Land</h3><p>Auch Freunde von Fleischgerichten werden hier fündig.</p></div></div>
+  <div class="course"><span class="n">03</span><div><h3>Vegetarisch</h3><p>Wer fleischlos isst: satt werden Sie hier bestimmt.</p></div></div>
+  <div class="course"><span class="n">04</span><div><h3>Salatbuffet</h3><p>Groß, frisch und der Klassiker des Hauses.</p></div></div>
+ </div>
+ <p class="menu-slot"><b>Platz für Ihre Speisekarte:</b> Hier stehen Ihre Gerichte mit Preisen, nach Kategorien sortiert und jederzeit selbst änderbar. Gäste lesen sie vor dem Besuch am Handy.</p>
+</div></section>
+
+<section id="salatbuffet"><div class="wrap buffet">
+ <div class="card">
+  <span class="tag">Das Markenzeichen</span>
+  <h2>Das große<br><em>Salatbuffet</em></h2>
+  <p class="lead">Der Klassiker des Hauses: groß, frisch und der passende Begleiter zu Fisch und Fleisch.</p>
+  <a class="btn" href="tel:+4946821234">Tisch reservieren</a>
+ </div>
+ <img src="assets/restaurant.webp" alt="Gastraum mit Glasdach, Schiffsmodellen und gedeckten Tischen" loading="lazy">
+</div></section>
+
+<section id="haus" class="hp"><div class="wrap">
+ <p class="over" style="color:var(--deep)">Alles unter einem Dach</p>
+ <h2>Übernachten, essen,<br><em>ausklingen.</em></h2>
+ <div class="row">
+  <a href="../neptun-hotel/"><b>Hotel Neptun</b><span>Vier Doppelzimmer im selben Haus, mit Frühstücksbuffet.</span><span class="go">Zum Hotel →</span></a>
+  <div><b>Halbpension</b><span>Hotelgäste essen auf Wunsch abends bei uns im Restaurant.</span></div>
+  <a href="../onerbaeaenke/v2/"><b>Onerbäänke</b><span>Die Kneipe im Haus, geöffnet bis 1 Uhr nachts.</span><span class="go">Zur Bar →</span></a>
+ </div>
+</div></section>
+
+<section id="besuch"><div class="wrap">
+ <p class="over">Besuchen Sie uns</p>
+ <h2 style="margin-bottom:40px">Strunwai 7. <em>In der Fußgängerzone.</em></h2>
+ <div class="visit">
+  <div class="vbox">
+   <div><small>Adresse</small>Restaurant Neptun<br>Strunwai 7, 25946 Norddorf auf Amrum</div>
+   <div><small>Reservierung</small><a href="tel:+4946821234">04682 1234</a></div>
+   <div><small>E-Mail</small><a href="mailto:hotel@neptun-amrum.de">hotel@neptun-amrum.de</a></div>
+   <div><small>Öffnungszeiten</small>Werden bei Umsetzung ergänzt</div>
+  </div>
+  <iframe class="map" title="Karte: Restaurant Neptun, Strunwai 7, Norddorf" loading="lazy" src="https://maps.google.com/maps?q=Hotel-Restaurant%20Neptun%2C%20Strunwai%207%2C%2025946%20Norddorf&z=16&output=embed"></iframe>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Restaurant Neptun · Strunwai 7 · Norddorf auf Amrum</span><span>Impressum &amp; Datenschutz werden bei Umsetzung ergänzt</span></div></footer>
+</body>
+</html>
