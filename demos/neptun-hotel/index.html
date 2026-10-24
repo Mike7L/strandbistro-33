@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hotel Neptun · Norddorf auf Amrum</title>
+<meta name="description" content="Hotel Neptun in Norddorf auf Amrum: kleines, ruhiges Hotel mit vier Doppelzimmern in der Fußgängerzone, Frühstücksbuffet, Halbpension auf Wunsch, 10 Minuten zum Strand.">
+<meta name="theme-color" content="#f5f1ea">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#f5f1ea;--sand-2:#ebe3d5;--sea:#1f4e66;--sea-d:#143646;--dune:#b7956a;--ink:#1e2a30;--muted:#5f6c72;--line:#ddd3c2;--white:#fffdf9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16.5px/1.7 "Inter","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--sand)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(245,241,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;gap:14px}
+.logo{text-decoration:none;display:flex;align-items:baseline;gap:10px}
+.logo b{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.14em;color:var(--sea)}
+.logo span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;gap:26px;font-size:14px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--sea)}
+.book{background:var(--sea);color:#fff;text-decoration:none;padding:10px 20px;border-radius:2px;font-weight:600;font-size:14px;letter-spacing:.06em;white-space:nowrap}
+.hero{max-width:1180px;margin:auto;padding:56px 22px 0;display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.over{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--dune);font-weight:600;margin:0 0 18px}
+.hero h1{font-size:clamp(46px,6.4vw,84px);color:var(--sea-d)}
+.hero h1 i{color:var(--dune)}
+.hero p{font-size:19px;color:var(--muted);margin:22px 0 30px;max-width:460px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:2px;text-decoration:none;font-weight:600;letter-spacing:.04em;background:var(--sea);color:#fff}
+.btn.line{background:transparent;color:var(--sea);border:1px solid var(--sea)}
+.hero-pics{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:560px}
+.hero-pics img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.hero-pics img:first-child{grid-row:span 2}
+.quick{max-width:1180px;margin:44px auto 0;padding:0 22px}
+.quick form{background:var(--white);border:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr) auto;align-items:end;gap:0;box-shadow:0 18px 40px rgba(20,54,70,.08)}
+.quick label{display:grid;gap:4px;padding:16px 20px;border-right:1px solid var(--line);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.quick input,.quick select{border:0;background:transparent;font:500 16px "Inter",sans-serif;color:var(--ink);padding:2px 0}
+.quick button{height:100%;border:0;background:var(--dune);color:#fff;font:600 14px "Inter",sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:0 28px;cursor:pointer}
+section{padding:110px 22px}
+.wrap{max-width:1180px;margin:auto}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:54px}
+h2{font-size:clamp(40px,5vw,62px);color:var(--sea-d)}
+h2 i{color:var(--dune)}
+.head p{color:var(--muted);font-size:18px;margin:0}
+.rooms{display:grid;grid-template-columns:repeat(2,1fr);gap:34px}
+.room{background:var(--white);border:1px solid var(--line)}
+.room img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.room .in{padding:26px 28px 30px}
+.room .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.room h3{font-size:34px;color:var(--sea-d)}
+.room .size{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--dune)}
+.room .view{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin:4px 0 12px;font-weight:600}
+.room ul{margin:0;padding:0;list-style:none;color:var(--muted);display:grid;gap:4px}
+.room li::before{content:"— ";color:var(--dune)}
+.room a{display:inline-block;margin-top:18px;font-weight:600;color:var(--sea);text-decoration:none;border-bottom:1px solid var(--sea)}
+.all{background:var(--sea-d);color:#e7eef1}
+.all h2{color:#fff}
+.all .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.12);margin-top:40px}
+.all .grid div{background:var(--sea-d);padding:28px 24px}
+.all b{display:block;font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:500;color:#fff;margin-bottom:6px}
+.all span{font-size:15px;color:#b7c8cf}
+.lage{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.steps{list-style:none;padding:0;margin:30px 0 0;border-top:1px solid var(--line)}
+.steps li{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
+.steps b{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:600;color:var(--sea)}
+.lage img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.more{background:var(--sand-2)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.duo a{position:relative;display:block;min-height:340px;color:#fff;text-decoration:none;overflow:hidden}
+.duo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.duo a:hover img{transform:scale(1.04)}
+.duo a::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,54,70,.85),rgba(20,54,70,0) 60%)}
+.duo div{position:absolute;left:28px;bottom:26px;right:28px;z-index:2}
+.duo h3{font-size:38px}
+.duo span{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#f0dfc4}
+.ask{display:grid;grid-template-columns:1fr 1.1fr;gap:60px}
+form.full{background:var(--white);border:1px solid var(--line);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form.full label{display:grid;gap:6px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+form.full input,form.full select,form.full textarea{font:16px "Inter",sans-serif;border:1px solid var(--line);background:var(--sand);padding:11px 12px;color:var(--ink);border-radius:2px}
+form.full .w{grid-column:1/-1}
+form.full .chk{display:flex;gap:8px;align-items:center;text-transform:none;letter-spacing:0;font-size:15px;color:var(--ink)}
+form.full button{grid-column:1/-1;border:0;background:var(--sea);color:#fff;font:600 15px "Inter",sans-serif;letter-spacing:.08em;padding:15px;cursor:pointer}
+form.full small{grid-column:1/-1;color:var(--muted)}
+.contact{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:18px}
+.contact small{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dune)}
+footer{background:var(--sea-d);color:#b7c8cf;padding:34px 22px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:920px){
+ nav{display:none}
+ .hero,.head,.lage,.ask,.duo{grid-template-columns:1fr;gap:30px}
+ .hero-pics{height:420px}
+ .quick form{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .quick label{min-width:0}
+ .quick input,.quick select{width:100%;min-width:0}
+ .quick label:nth-child(2n){border-right:0}
+ .quick label{border-bottom:1px solid var(--line)}
+ .quick button{grid-column:1/-1;padding:16px}
+ .rooms{grid-template-columns:1fr}
+ .all .grid{grid-template-columns:1fr 1fr}
+ section{padding:72px 22px}
+}
+@media (max-width:520px){.hero-pics{grid-template-columns:1fr;grid-template-rows:260px;height:auto}.hero-pics img:not(:first-child){display:none}form.full{grid-template-columns:1fr}.all .grid{grid-template-columns:1fr}.bar .book{padding:9px 12px}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Website-Vorschlag für das Hotel Neptun · Inhalte und Fotos von der bisherigen Seite des Hauses, Stand Oktober 2026</div>
+<header><div class="bar">
+ <a class="logo" href="#top"><b>NEPTUN</b><span>Hotel · Amrum</span></a>
+ <nav><a href="#zimmer">Zimmer</a><a href="#leistungen">Leistungen</a><a href="#lage">Lage</a><a href="#anfrage">Anfrage</a></nav>
+ <a class="book" href="#anfrage">Zimmer anfragen</a>
+</div></header>
+
+<main id="top">
+<div class="hero">
+ <div>
+  <p class="over">Hotel in Norddorf auf Amrum</p>
+  <h1>Acht Betten.<br><i>Viel Meer.</i></h1>
+  <p>Unser kleines, ruhiges Hotel liegt in der Fußgängerzone von Norddorf. Vier Doppelzimmer, ein Frühstücksbuffet am Morgen und zehn Minuten zu Fuß bis zum Strand.</p>
+  <div class="cta"><a class="btn" href="#zimmer">Die Zimmer</a><a class="btn line" href="tel:+4946821234">04682 1234</a></div>
+ </div>
+ <div class="hero-pics">
+  <img src="assets/haus.webp" alt="Eingang des Hotels Neptun mit Treppe, Fahne und Rosen" width="1430" height="949">
+  <img src="assets/zimmer-1.webp" alt="Helles Doppelzimmer mit Holzverkleidung">
+  <img src="assets/zimmer-2.webp" alt="Doppelzimmer mit bunter Bettwäsche">
+ </div>
+</div>
+
+<div class="quick"><form id="quick" aria-label="Schnellanfrage">
+ <label>Anreise<input type="date" name="an" required></label>
+ <label>Abreise<input type="date" name="ab" required></label>
+ <label>Gäste<select name="g"><option>1</option><option selected>2</option></select></label>
+ <label>Verpflegung<select name="v"><option>Frühstück</option><option>Halbpension</option></select></label>
+ <button type="submit">Verfügbarkeit anfragen</button>
+</form></div>
+
+<section id="zimmer"><div class="wrap">
+ <div class="head">
+  <div><p class="over">Unsere Zimmer</p><h2>Vier Zimmer,<br><i>jedes für sich.</i></h2></div>
+  <p>Alle Zimmer liegen in der zweiten Etage, sind Nichtraucherzimmer und haben Dusche, WC, TV, Telefon und W-LAN. Drei von vier blicken aufs Meer.</p>
+ </div>
+ <div class="rooms">
+  <article class="room"><img src="assets/zimmer-1.webp" alt="Zimmer 1" loading="lazy"><div class="in"><div class="top"><h3>Zimmer 1</h3><span class="size">16 m²</span></div><p class="view">Meerblick</p><ul><li>Doppelbett</li><li>Zusätzliches kleines Bad mit Dusche und WC</li><li>Frühstücksbuffet inklusive</li></ul><a href="#anfrage" data-room="Zimmer 1">Zimmer 1 anfragen</a></div></article>
+  <article class="room"><img src="assets/zimmer-2.webp" alt="Zimmer 2" loading="lazy"><div class="in"><div class="top"><h3>Zimmer 2</h3><span class="size">16 m²</span></div><p class="view">Meerblick</p><ul><li>Doppelbett</li><li>Kleines Bad mit Dusche und WC</li><li>Frühstücksbuffet inklusive</li></ul><a href="#anfrage" data-room="Zimmer 2">Zimmer 2 anfragen</a></div></article>
+  <article class="room"><img src="assets/bad.webp" alt="Bad mit Dusche und Fliesen mit Delfinmotiv" loading="lazy"><div class="in"><div class="top"><h3>Zimmer 3</h3><span class="size">16,5 m²</span></div><p class="view">Meerblick</p><ul><li>Extra Raum mit Kleiderschrank</li><li>Großzügiges Bad mit Dusche und WC</li><li>Frühstücksbuffet inklusive</li></ul><a href="#anfrage" data-room="Zimmer 3">Zimmer 3 anfragen</a></div></article>
+  <article class="room"><img src="assets/zimmer-5.webp" alt="Zimmer 5" loading="lazy"><div class="in"><div class="top"><h3>Zimmer 5</h3><span class="size">13 m²</span></div><p class="view">Richtung Süden</p><ul><li>Extra Raum mit Kleiderschrank</li><li>Großzügiges Bad mit Dusche und WC</li><li>Frühstücksbuffet inklusive</li></ul><a href="#anfrage" data-room="Zimmer 5">Zimmer 5 anfragen</a></div></article>
+ </div>
+</div></section>
+
+<section id="leistungen" class="all"><div class="wrap">
+ <p class="over" style="color:#e5c99c">Bei uns inklusive</p>
+ <h2>Gut versorgt vom ersten Morgen an</h2>
+ <div class="grid">
+  <div><b>Frühstücksbuffet</b><span>Jeden Morgen im Haus</span></div>
+  <div><b>Halbpension</b><span>Auf Wunsch im Restaurant Neptun</span></div>
+  <div><b>Kostenloser Parkplatz</b><span>Für unsere Hotelgäste</span></div>
+  <div><b>W-LAN</b><span>In allen Zimmern</span></div>
+ </div>
+</div></section>
+
+<section id="lage"><div class="wrap lage">
+ <div>
+  <p class="over">Die Lage</p>
+  <h2>Mitten in Norddorf.<br><i>Kurze Wege.</i></h2>
+  <ul class="steps">
+   <li><span>Fußgängerzone, Läden &amp; Cafés</span><b>vor der Tür</b></li>
+   <li><span>Kurmittelhaus</span><b>5 Min.</b></li>
+   <li><span>Strand am Kniepsand</span><b>10 Min.</b></li>
+   <li><span>Fähre in Wittdün</span><b>mit dem Inselbus</b></li>
+  </ul>
+ </div>
+ <iframe title="Karte: Hotel Neptun, Strunwai 7, Norddorf" loading="lazy" style="border:0;width:100%;aspect-ratio:4/3" src="https://maps.google.com/maps?q=Hotel-Restaurant%20Neptun%2C%20Strunwai%207%2C%2025946%20Norddorf&z=15&output=embed"></iframe>
+</div></section>
+
+<section class="more"><div class="wrap">
+ <div class="head"><div><p class="over">Im selben Haus</p><h2>Essen und ausklingen,<br><i>ohne weite Wege.</i></h2></div><p>Restaurant Neptun und die Kneipe Onerbäänke sind im selben Haus. Erst zu Abend essen, dann sind es nur ein paar Schritte bis zur Theke.</p></div>
+ <div class="duo">
+  <a href="../neptun-restaurant/"><img src="assets/restaurant.webp" alt="Gastraum des Restaurants Neptun" loading="lazy"><div><span>Restaurant</span><h3>Restaurant Neptun</h3></div></a>
+  <a href="../onerbaeaenke/v2/"><img src="assets/haus.webp" alt="Hotel-Restaurant Neptun von außen" loading="lazy" style="object-position:50% 70%"><div><span>Bar &amp; Bistro</span><h3>Onerbäänke</h3></div></a>
+ </div>
+</div></section>
+
+<section id="anfrage"><div class="wrap ask">
+ <div>
+  <p class="over">Direkt beim Hotel</p>
+  <h2>Ihre <i>Anfrage</i></h2>
+  <p style="color:var(--muted);font-size:18px">Sagen Sie uns, wann Sie kommen möchten. Wir antworten mit Verfügbarkeit und Preis.</p>
+  <ul class="contact">
+   <li><small>Telefon</small><a href="tel:+4946821234">04682 1234</a></li>
+   <li><small>E-Mail</small><a href="mailto:hotel@neptun-amrum.de">hotel@neptun-amrum.de</a></li>
+   <li><small>Adresse</small>Hotel Neptun · Strunwai 7 · 25946 Norddorf auf Amrum</li>
+  </ul>
+ </div>
+ <form class="full" id="form">
+  <label>Anreise<input type="date" name="an" required></label>
+  <label>Abreise<input type="date" name="ab" required></label>
+  <label>Gäste<select name="g"><option>1</option><option selected>2</option></select></label>
+  <label>Zimmer<select name="z" id="zsel"><option>egal</option><option>mit Meerblick</option><option>Zimmer 1</option><option>Zimmer 2</option><option>Zimmer 3</option><option>Zimmer 5</option></select></label>
+  <label class="w chk"><input type="checkbox" name="hp"> Mit Halbpension</label>
+  <label>Name<input name="name" required autocomplete="name"></label>
+  <label>Telefon oder E-Mail<input name="k" required></label>
+  <label class="w">Nachricht<textarea name="msg" rows="3"></textarea></label>
+  <button type="submit">Anfrage senden</button>
+  <small>Öffnet Ihr E-Mail-Programm mit einer fertigen Anfrage an hotel@neptun-amrum.de.</small>
+ </form>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Hotel Neptun · Strunwai 7 · Norddorf auf Amrum · 4,4 ★ bei Google</span><span>Impressum &amp; Datenschutz werden bei Umsetzung ergänzt</span></div></footer>
+<script>
+const mail=(o)=>{const b=`Anreise: ${o.an}\nAbreise: ${o.ab}\nGäste: ${o.g}\nZimmer: ${o.z||'egal'}\nVerpflegung: ${o.v||(o.hp?'Halbpension':'Frühstück')}\nName: ${o.name||''}\nKontakt: ${o.k||''}\n\n${o.msg||''}`;location.href='mailto:hotel@neptun-amrum.de?subject='+encodeURIComponent(`Zimmeranfrage ${o.an} bis ${o.ab}`)+'&body='+encodeURIComponent(b)};
+document.getElementById('quick').addEventListener('submit',e=>{e.preventDefault();mail(Object.fromEntries(new FormData(e.target)))});
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();mail(Object.fromEntries(new FormData(e.target)))});
+document.querySelectorAll('[data-room]').forEach(a=>a.addEventListener('click',()=>document.getElementById('zsel').value=a.dataset.room));
+</script>
+</body>
+</html>
