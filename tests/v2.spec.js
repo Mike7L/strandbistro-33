@@ -8,7 +8,7 @@ async function open(page, time = '2026-10-21T13:00:00') {
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
   await page.clock.setFixedTime(at(time));
-  await page.goto('/v2/');
+  await page.goto('/strandbistro-33/v2/');
   return errors;
 }
 
@@ -148,7 +148,14 @@ test.describe('mobile navigation', () => {
 });
 
 test('the original site still loads', async ({ page }) => {
-  const response = await page.goto('/');
+  const response = await page.goto('/strandbistro-33/');
   expect(response.status()).toBe(200);
   await expect(page.locator('h1')).toContainText('Ein Platz');
+});
+
+test('the catalog links to every site', async ({ page, request }) => {
+  await page.goto('/');
+  const links = await page.locator('main a').evaluateAll(as => as.map(a => a.href));
+  expect(links.length).toBeGreaterThanOrEqual(9);
+  for (const link of links) expect((await request.get(link)).status(), link).toBe(200);
 });
