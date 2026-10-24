@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Onerbäänke · Bar &amp; Bistro · Norddorf auf Amrum</title>
+<meta name="description" content="Onerbäänke – Bar &amp; Bistro im Hotel-Restaurant Neptun, Strunwai 7, Norddorf auf Amrum. Abends geöffnet bis 1 Uhr.">
+<meta name="theme-color" content="#0d0f1a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0d0f1a;--night-2:#151a2e;--card:#1b2140;--neon:#5b74ff;--neon-l:#9fb0ff;--amber:#f2b64d;--brick:#a2483a;--text:#eef0f8;--muted:#a3a9c4;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 "Inter","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--text);background:var(--night);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.05;letter-spacing:-.02em}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:400}
+.script{font-family:"Yellowtail","Brush Script MT","Segoe Script","Snell Roundhand",cursive;font-weight:400;letter-spacing:0}
+.neon{color:#fff;text-shadow:0 0 6px var(--neon),0 0 22px var(--neon),0 0 48px rgba(91,116,255,.6)}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+.demo a{font-weight:700}
+header{position:sticky;top:0;z-index:20;transition:background .3s}
+header.solid{background:rgba(13,15,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+.logo{text-decoration:none;font-size:30px;line-height:1}
+nav{display:flex;gap:26px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:#fff}
+.status{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;background:rgba(255,255,255,.04)}
+.status i{width:9px;height:9px;border-radius:50%;background:#666}
+.status.open i{background:#4ade80;box-shadow:0 0 10px #4ade80}
+.status.closed i{background:#f87171}
+.hero{margin-top:-64px;min-height:100svh;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:0;position:relative;overflow:hidden}
+.hero-copy{padding:120px 6vw 80px max(22px,calc((100vw - 1180px)/2 + 22px))}
+.eyebrow{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);margin:0 0 22px}
+.hero h1{font-size:clamp(76px,12vw,168px);margin:0 0 6px}
+.hero .sub{font-size:clamp(22px,2.4vw,30px);color:var(--neon-l);margin:0 0 22px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:470px;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:600;background:var(--neon);color:#fff;box-shadow:0 8px 30px rgba(91,116,255,.45)}
+.btn.ghost{background:transparent;border:1px solid var(--line);box-shadow:none}
+.hero-photo{height:100%;min-height:100svh;position:relative}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night) 0%,rgba(13,15,26,.75) 14%,rgba(13,15,26,.15) 42%,rgba(13,15,26,0) 70%)}
+.credit{position:absolute;right:14px;top:76px;z-index:2;font-size:11px;color:rgba(255,255,255,.6)}
+.marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;background:var(--night-2)}
+.marquee div{display:inline-block;padding:16px 0;animation:m 40s linear infinite;font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.marquee span{margin:0 26px}
+.marquee b{color:var(--amber);font-weight:400}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:110px 22px}
+.wrap{max-width:1180px;margin:auto}
+.label{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);margin:0 0 18px}
+h2{font-size:clamp(40px,5.6vw,72px)}
+h2 em{font-style:normal;color:var(--neon-l)}
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:end}
+.intro p{font-size:20px;color:var(--muted);margin:0}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:64px;counter-reset:a}
+.act{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px;position:relative;overflow:hidden}
+.act::before{counter-increment:a;content:"0" counter(a);position:absolute;right:22px;top:14px;font-size:64px;font-family:Georgia,serif;color:rgba(255,255,255,.06)}
+.act .time{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+.act h3{font-size:30px;margin:12px 0 10px}
+.act p{color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.frame{border-radius:28px;overflow:hidden;position:relative;min-height:440px;border:1px solid var(--line)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame figcaption{position:absolute;left:18px;bottom:16px;background:rgba(13,15,26,.75);backdrop-filter:blur(6px);padding:8px 14px;border-radius:999px;font-size:13px}
+.hours{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:40px;display:flex;flex-direction:column;justify-content:center}
+.hours h3{font-size:44px;margin-bottom:24px}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-size:19px}
+.row:last-of-type{border:0}
+.row b{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.row.off b{color:#f87171}
+.note{font-size:13px;color:var(--muted);margin-top:18px}
+.today{margin-top:22px}
+.neptun{background:linear-gradient(180deg,var(--night) 0%,#1a1220 100%)}
+.neptun .split{grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.neptun p{color:var(--muted);font-size:19px}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:36px;display:grid;gap:22px;align-content:start}
+.cbox small{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:4px}
+.cbox a{text-decoration:none;border-bottom:1px solid var(--neon)}
+.map{border:0;width:100%;height:100%;min-height:380px;border-radius:28px;filter:invert(.92) hue-rotate(180deg) saturate(.6)}
+footer{border-top:1px solid var(--line);padding:34px 22px 110px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.dock{display:none}
+@media (max-width:900px){
+ nav{display:none}
+ header .status{display:none}
+ .hero{grid-template-columns:1fr;min-height:auto}
+ .hero-photo{order:-1;min-height:62svh}
+ .hero-photo::after{background:linear-gradient(0deg,var(--night) 2%,rgba(13,15,26,0) 55%)}
+ .hero-copy{padding:0 22px 56px;margin-top:-28px;position:relative;z-index:2}
+ .hero .eyebrow{margin-bottom:10px}
+ .intro,.split,.neptun .split,.contact{grid-template-columns:1fr;gap:28px}
+ .acts{grid-template-columns:1fr}
+ .frame{min-height:320px}
+ section{padding:72px 22px}
+ .hours{padding:28px}
+ .dock{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:30;background:rgba(21,26,46,.92);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:8px}
+ .dock a{text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:600;background:var(--neon)}
+ .dock a+a{background:transparent;border:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){.marquee div{animation:none}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Variante 2 · Website-Vorschlag für die Onerbäänke · <a href="../">Variante 1 ansehen</a></div>
+<header id="hdr"><div class="bar">
+ <a class="logo script neon" href="#top">Onerbäänke</a>
+ <nav><a href="#abend">Der Abend</a><a href="#zeiten">Zeiten</a><a href="#neptun">Neptun</a><a href="#kontakt">Kontakt</a></nav>
+ <span class="status" data-status><i></i><span>Öffnungszeiten</span></span>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="hero-copy">
+  <p class="eyebrow">Bar &amp; Bistro · Norddorf auf Amrum</p>
+  <h1 class="script neon">Onerbäänke</h1>
+  <p class="sub serif">Der letzte Halt des Abends.</p>
+  <p class="lead">Die Kneipe im Hotel-Restaurant Neptun, mitten in der Fußgängerzone. Abends geöffnet, bis 1 Uhr nachts.</p>
+  <div class="btns"><a class="btn" href="tel:+491606453378">☎ 0160 6453378</a><a class="btn ghost" href="#zeiten">Öffnungszeiten</a></div>
+ </div>
+ <div class="hero-photo">
+  <img src="../assets/eingang.webp" alt="Eingang der Onerbäänke: blaue Schrift „Onerbäänke Bar &amp; Bistro“ auf einer Klinkerfassade" width="1800" height="1350">
+  <span class="credit">Foto: Jasmin Wilhelm · Google Maps</span>
+ </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div>
+ <span>Bar &amp; Bistro</span><b>✦</b><span>Strunwai 7</span><b>✦</b><span>Bitburger Premium Pils</span><b>✦</b><span>Bis 01:00 Uhr</span><b>✦</b><span>Im Hotel-Restaurant Neptun</span><b>✦</b>
+ <span>Bar &amp; Bistro</span><b>✦</b><span>Strunwai 7</span><b>✦</b><span>Bitburger Premium Pils</span><b>✦</b><span>Bis 01:00 Uhr</span><b>✦</b><span>Im Hotel-Restaurant Neptun</span><b>✦</b>
+</div></div>
+
+<section id="abend"><div class="wrap">
+ <div class="intro">
+  <div><p class="label">Ein Abend in Norddorf</p><h2 class="serif">Erst ans Meer.<br><em>Dann auf die Bank.</em></h2></div>
+  <p>Wenn es draußen dunkel wird, sitzt man in der Onerbäänke zusammen. Hotelgäste, Urlauber aus dem Dorf und alle, die den Tag am Meer noch nicht ganz beenden wollen.</p>
+ </div>
+ <div class="acts">
+  <article class="act"><span class="time">ab 18:00</span><h3 class="serif">Ankommen</h3><p>Die Tür geht auf, die Theke ist besetzt, das erste Bitburger läuft.</p></article>
+  <article class="act"><span class="time">bis 23:00</span><h3 class="serif">Essen</h3><p>Aus der Bistro-Küche gibt es abends etwas Warmes zum Bier.</p></article>
+  <article class="act"><span class="time">bis 01:00</span><h3 class="serif">Ausklingen</h3><p>Noch eine Runde, dann geht's zu Fuß nach Hause durch das stille Dorf.</p></article>
+ </div>
+</div></section>
+
+<section id="zeiten" style="padding-top:0"><div class="wrap split">
+ <figure class="frame" style="margin:0"><img src="../assets/eingang.webp" alt="Kreidetafel mit Öffnungszeiten neben der Eingangstür" style="object-position:20% 60%" loading="lazy"><figcaption>Die Kreidetafel am Eingang</figcaption></figure>
+ <div class="hours">
+  <p class="label">Öffnungszeiten</p>
+  <h3 class="serif">Wann wir da sind</h3>
+  <div class="row"><span>Bar</span><b>18:00 – 01:00</b></div>
+  <div class="row"><span>Küche</span><b>18:00 – 23:00</b></div>
+  <div class="row off"><span>Ruhetag</span><b>Dienstag</b></div>
+  <div class="today"><span class="status" data-status><i></i><span>…</span></span></div>
+  <p class="note">Nach der Kreidetafel am Eingang (Foto Oktober 2020) und Google Maps. Bitte vor Veröffentlichung bestätigen.</p>
+ </div>
+</div></section>
+
+<section id="neptun" class="neptun"><div class="wrap split">
+ <figure class="frame" style="margin:0"><img src="../assets/gastraum.webp" alt="Gastraum des Restaurants Neptun mit Schiffsmodellen" loading="lazy"><figcaption>Restaurant Neptun, gleich nebenan</figcaption></figure>
+ <div>
+  <p class="label">Unter einem Dach</p>
+  <h2 class="serif">Erst ins Neptun.<br><em>Dann rüber.</em></h2>
+  <p>Die Onerbäänke gehört zum Hotel-Restaurant Neptun. Im Restaurant gibt es Fisch, Fleisch und ein großes Salatbuffet. Danach sind es nur ein paar Schritte bis zur Theke.</p>
+  <div class="btns"><a class="btn ghost" href="tel:+4946821234">Restaurant Neptun · 04682 1234</a></div>
+ </div>
+</div></section>
+
+<section id="kontakt"><div class="wrap">
+ <p class="label">Kontakt</p>
+ <h2 class="serif" style="margin-bottom:40px">Strunwai 7. <em>Mitten im Dorf.</em></h2>
+ <div class="contact">
+  <div class="cbox">
+   <div><small>Adresse</small>Onerbäänke · im Hotel-Restaurant Neptun<br>Strunwai 7, 25946 Norddorf auf Amrum</div>
+   <div><small>Telefon</small><a href="tel:+491606453378">0160 6453378</a></div>
+   <div><small>Facebook</small><a href="https://www.facebook.com/Norddorf/" target="_blank" rel="noopener">facebook.com/Norddorf</a></div>
+   <div><small>Bewertung</small>4,1 ★ bei Google</div>
+  </div>
+  <iframe class="map" title="Karte: Onerbäänke, Strunwai 7, Norddorf" loading="lazy" src="https://maps.google.com/maps?q=Onerb%C3%A4%C3%A4nke%2C%20Strunwai%207%2C%2025946%20Norddorf&z=16&output=embed"></iframe>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <span>© 2026 Onerbäänke · Bar &amp; Bistro · Norddorf auf Amrum</span>
+ <span>Impressum &amp; Datenschutz werden bei Umsetzung ergänzt</span>
+</div></footer>
+
+<div class="dock"><a href="tel:+491606453378">Anrufen</a><a href="https://www.google.com/maps/search/?api=1&query=Onerb%C3%A4%C3%A4nke+Strunwai+7+Norddorf" target="_blank" rel="noopener">Route</a></div>
+
+<script>
+// Öffnungszeiten laut Aushang: Bar 18–01 Uhr, Ruhetag Dienstag
+(function(){
+ const now=new Date(),d=now.getDay(),h=now.getHours();
+ const evening=h>=18&&d!==2, night=h<1&&((d+6)%7)!==2;
+ const open=evening||night;
+ let text;
+ if(open) text='Jetzt geöffnet · bis 01:00';
+ else if(d===2&&h>=1) text='Heute Ruhetag · morgen ab 18:00';
+ else text='Heute ab 18:00 geöffnet';
+ document.querySelectorAll('[data-status]').forEach(el=>{el.classList.add(open?'open':'closed');el.querySelector('span').textContent=text});
+ const hdr=document.getElementById('hdr');
+ const onScroll=()=>hdr.classList.toggle('solid',scrollY>40);addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+</script>
+</body>
+</html>
