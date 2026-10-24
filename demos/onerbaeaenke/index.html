@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Onerbäänke · Bar &amp; Bistro · Norddorf auf Amrum</title>
+<meta name="description" content="Onerbäänke – Bar &amp; Bistro im Hotel-Restaurant Neptun, Strunwai 7, Norddorf auf Amrum. Geöffnet bis 1 Uhr nachts.">
+<meta name="theme-color" content="#2a1712">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+:root{--brick:#8e3b2b;--brick-d:#2a1712;--cream:#f7f0e1;--blue:#2c3fa8;--gold:#d8a64a;--ink:#2b2220;--muted:#6f625c;--line:#e5d9c2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:var(--cream)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.1}
+.script{font-family:"Yellowtail","Brush Script MT","Segoe Script","Snell Roundhand",cursive;font-weight:400}
+.demo{background:#fff6d6;color:#6b5312;font-size:13px;text-align:center;padding:6px 16px}
+header{position:sticky;top:0;z-index:10;background:var(--brick-d);color:var(--cream)}
+.bar{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;gap:12px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font-size:30px;color:#fff}
+.logo small{font-size:11px;letter-spacing:.3em;opacity:.75;margin-top:2px}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;opacity:.9}
+.tel{background:var(--gold);color:var(--brick-d);font-weight:700;padding:9px 16px;border-radius:6px;text-decoration:none;white-space:nowrap}
+.hero{position:relative;color:#fff;min-height:74vh;display:grid;align-items:end;background:#2a1712 url(assets/eingang.webp) center 30%/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,23,18,.1),rgba(42,23,18,.88) 78%)}
+.hero-in{position:relative;max-width:1100px;width:100%;margin:auto;padding:40px 20px 56px}
+.hero .kick{letter-spacing:.24em;font-size:13px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.hero h1{font-size:clamp(64px,11vw,128px);margin:6px 0}
+.hero p{font-size:20px;max-width:520px;margin:0 0 24px;opacity:.92}
+.btn{display:inline-block;background:var(--gold);color:var(--brick-d);font-weight:700;padding:13px 22px;border-radius:6px;text-decoration:none}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7);margin-left:8px}
+.facts{background:var(--brick);color:#fff}
+.facts ul{max-width:1100px;margin:auto;list-style:none;padding:16px 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;font-size:15px}
+.facts b{display:block;font-size:20px;color:var(--gold)}
+section{padding:80px 20px}
+.wrap{max-width:1100px;margin:auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.kick2{letter-spacing:.2em;font-size:13px;text-transform:uppercase;color:var(--brick);font-weight:700;margin:0 0 10px}
+h2{font-size:clamp(32px,4.4vw,46px);color:var(--brick-d);margin-bottom:14px}
+h2 .script{color:var(--blue);font-size:1.25em}
+.lead{font-size:19px;color:var(--muted)}
+.photo{border-radius:10px;overflow:hidden;box-shadow:0 18px 40px rgba(42,23,18,.25)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.cards div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}
+.cards b{display:block;font-size:20px;color:var(--brick);margin-bottom:6px}
+.chalk{background:#222a26;color:#f1f1ea;border-radius:12px;padding:28px;border:10px solid #6b4a2f;font-family:"Segoe Print","Comic Sans MS",cursive}
+.chalk h3{font-size:28px;margin-bottom:12px}
+.chalk div{display:flex;justify-content:space-between;border-bottom:1px dashed rgba(255,255,255,.25);padding:8px 0}
+.chalk small{display:block;margin-top:12px;opacity:.7;font-family:"Segoe UI",system-ui,sans-serif;font-size:13px}
+.neptun{background:var(--brick-d);color:var(--cream)}
+.neptun h2{color:#fff}
+.neptun .lead{color:#d9c9b5}
+.clist{list-style:none;padding:0;margin:18px 0;display:grid;gap:12px}
+.clist b{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brick)}
+.map{border:0;width:100%;height:340px;border-radius:10px}
+footer{background:#1b0f0c;color:#bfae9c;padding:28px 20px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:880px){
+ nav{display:none}
+ .two,.cards{grid-template-columns:1fr}
+ .facts ul{grid-template-columns:1fr 1fr}
+ section{padding:56px 20px}
+}
+@media (max-width:480px){.btn.ghost{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="demo">Entwurf · Variante 1 · Website-Vorschlag für die Onerbäänke · <a href="v2/">Variante 2 ansehen →</a></div>
+<header><div class="bar">
+ <a class="logo" href="#top"><b class="script">Onerbäänke</b><small>BAR &amp; BISTRO · AMRUM</small></a>
+ <nav><a href="#bar">Die Bar</a><a href="#zeiten">Zeiten</a><a href="#neptun">Im Neptun</a><a href="#kontakt">Kontakt</a></nav>
+ <a class="tel" href="tel:+491606453378">0160 6453378</a>
+</div></header>
+<main id="top">
+<section class="hero" style="padding:0"><div class="hero-in">
+ <span class="kick">Norddorf auf Amrum · Strunwai 7</span>
+ <h1 class="script">Onerbäänke</h1>
+ <p>Bar &amp; Bistro im Hotel-Restaurant Neptun. Der Ort, an dem Norddorfs Abende ausklingen, bis 1 Uhr nachts.</p>
+ <a class="btn" href="#zeiten">Wann ist offen?</a><a class="btn ghost" href="#kontakt">So finden Sie uns</a>
+</div></section>
+<div class="facts"><ul>
+ <li><b>bis 01:00</b>geöffnet</li>
+ <li><b>Bar &amp; Bistro</b>Getränke und Küche</li>
+ <li><b>Bitburger</b>Premium Pils</li>
+ <li><b>4,1 ★</b>bei Google</li>
+</ul></div>
+
+<section id="bar"><div class="wrap two">
+ <div>
+  <p class="kick2">Die Kneipe im Haus</p>
+  <h2>Ein Bier auf <span class="script">Onerbäänke</span></h2>
+  <p class="lead">Unten im Hotel-Restaurant Neptun, mitten in der Fußgängerzone. Nach dem Strand, nach dem Essen oder einfach so.</p>
+  <div class="cards" style="grid-template-columns:1fr">
+   <div><b>Bar</b>Bitburger Premium Pils und alles, was zu einem guten Abend dazugehört.</div>
+   <div><b>Bistro</b>Am Abend gibt es aus der Küche etwas zu essen.</div>
+  </div>
+ </div>
+ <div class="photo"><img src="assets/eingang.webp" alt="Eingang der Onerbäänke mit Schild „Bar &amp; Bistro“, Kreidetafel und Speisekarten-Kasten" width="1800" height="1350" loading="lazy"></div>
+</div></section>
+
+<section id="zeiten" style="background:#efe4cf"><div class="wrap two">
+ <div>
+  <p class="kick2">Öffnungszeiten</p>
+  <h2>Abends ist <span class="script">offen</span></h2>
+  <p class="lead">Die Bar schließt um 1 Uhr nachts. Wer vorher anrufen möchte: 0160 6453378.</p>
+ </div>
+ <div class="chalk">
+  <h3>Öffnungszeiten</h3>
+  <div><span>Küche</span><span>18:00 – 23:00</span></div>
+  <div><span>Bar</span><span>18:00 – 01:00</span></div>
+  <div><span>Ruhetag</span><span>Dienstag</span></div>
+  <small>Laut Kreidetafel am Eingang (Foto Okt. 2020) und Google Maps. Aktuelle Zeiten bei Umsetzung bestätigen.</small>
+ </div>
+</div></section>
+
+<section id="neptun" class="neptun"><div class="wrap two">
+ <div class="photo"><img src="assets/gastraum.webp" alt="Gastraum des Restaurants Neptun mit maritimer Dekoration" loading="lazy"></div>
+ <div>
+  <p class="kick2" style="color:var(--gold)">Unter einem Dach</p>
+  <h2>Erst essen im Neptun, dann rüber in die Bar</h2>
+  <p class="lead">Die Onerbäänke gehört zum Hotel-Restaurant Neptun. Im Restaurant gibt es Fisch, Fleisch und ein großes Salatbuffet, danach geht der Abend in der Kneipe weiter.</p>
+  <p><a class="btn" href="tel:+4946821234">Restaurant Neptun · 04682 1234</a></p>
+ </div>
+</div></section>
+
+<section id="kontakt"><div class="wrap two">
+ <div>
+  <p class="kick2">Kontakt</p>
+  <h2>Mitten in Norddorf</h2>
+  <ul class="clist">
+   <li><b>Adresse</b>Onerbäänke im Hotel-Restaurant Neptun<br>Strunwai 7, 25946 Norddorf auf Amrum</li>
+   <li><b>Telefon</b><a href="tel:+491606453378">0160 6453378</a></li>
+   <li><b>Facebook</b><a href="https://www.facebook.com/Norddorf/" target="_blank" rel="noopener">facebook.com/Norddorf</a></li>
+  </ul>
+ </div>
+ <iframe class="map" title="Karte: Onerbäänke, Strunwai 7, Norddorf" loading="lazy" src="https://maps.google.com/maps?q=Onerb%C3%A4%C3%A4nke%2C%20Strunwai%207%2C%2025946%20Norddorf&z=16&output=embed"></iframe>
+</div></section>
+</main>
+<footer><div class="wrap">
+ <span>© 2026 Onerbäänke · Bar &amp; Bistro · Norddorf auf Amrum</span>
+ <span>Foto Eingang: Jasmin Wilhelm, Google Maps · Impressum &amp; Datenschutz werden bei Umsetzung ergänzt</span>
+</div></footer>
+</body>
+</html>
